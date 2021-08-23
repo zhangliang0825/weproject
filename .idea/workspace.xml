@@ -1,0 +1,1485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b5b4a797-b507-4efa-acf1-3c94ee37b846" name="Changes" comment="数据代码" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="jijin" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>垫底</find>
+      <find>$$$$$</find>
+      <find>$</find>
+      <find>$$$$$$$$$$$$$$$$$$$$$$$$$$$$</find>
+      <find>##############</find>
+      <find>TTTTTTTTTTTTTTT</find>
+      <find>TTTTTTTTTTTTTTTTTTTTTTT</find>
+      <find>TTTTTTTTTTTTTTTTTTTTT</find>
+      <find>TTTTTTTTTTTTTTTTTTTTTTTTT</find>
+      <find>TTTTTTT</find>
+      <find>TTTTTTTTTTTTTT</find>
+      <find>TTTTTTTTT</find>
+      <find>TTTTTTTTTTTTTTTT</find>
+      <find>TTTTTTTTTTTTTT66</find>
+      <find>UUUUUUUU</find>
+      <find>EEEEEEE</find>
+      <find>11222222222234</find>
+      <find>##################</find>
+      <find>#####################</find>
+      <find>######################</find>
+      <find>####################</find>
+      <find>躺枪</find>
+      <find>HHHHHH</find>
+      <find>'T'</find>
+      <find>$$$$$$$$$$$</find>
+      <find>time</find>
+      <find>_createHelper</find>
+      <find>getsign_d</find>
+      <find>157</find>
+      <find>call</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>values</replace>
+      <replace>ceshi</replace>
+      <replace>'$1':'$2',</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>D:\代码脚本\项目程序\微信\wechat-spider-master\wechat-spider\core</dir>
+      <dir>D:\代码脚本\项目程序\微信\wechat-spider-master\wechat-spider</dir>
+      <dir>D:\代码脚本\项目程序\微信\wechat-spider-master</dir>
+      <dir>D:\代码脚本\项目程序\微信\wechat-spider</dir>
+      <dir>D:\代码脚本\项目程序</dir>
+      <dir>D:\代码脚本\项目程序\爬虫框架\ttconfig</dir>
+      <dir>D:\代码脚本\项目程序\爬虫框架\ttconfig\spider_redis</dir>
+    </dirStrings>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="origin/master" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="zipChanges" value="true" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/爬虫js代码/爬虫/极客电竞/demo.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/爬虫框架/ceshi/start_web_tt.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/爬虫框架/ceshi/souhu_word.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/爬虫框架/ceshi/start_sg.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/爬虫js代码/爬虫/财联社/cailian.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/数据处理清洗/delete_dup.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/souhu.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/爬虫框架/ceshi/start.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/爬虫框架/toutiao/toutiao/settings.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/爬虫框架/ceshi/ceshi/js/_get_as_cp_signature.js" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="&lt;9e825aba-79b8-4aca-a183-419eb77fe59e&gt;/ceshi/ceshi/spiders/souhu_web.py" />
+        <option value="&lt;9e825aba-79b8-4aca-a183-419eb77fe59e&gt;/ceshi/ceshi/spiders/souhu_id.py" />
+        <option value="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/souhu_web.py" />
+        <option value="$PROJECT_DIR$/爬虫框架/ttconfig/spider_redis/start_insert_data.py" />
+        <option value="&lt;603a746d-69a5-4f2f-b29f-8ec7a4dd6b19&gt;/weixin_history/insert_id_data_.py" />
+        <option value="$PROJECT_DIR$/爬虫框架/ttconfig/spider_redis/spider_redis/spiders/insert_2_data.py" />
+        <option value="&lt;603a746d-69a5-4f2f-b29f-8ec7a4dd6b19&gt;/微信/weixin_account_time.py" />
+        <option value="&lt;e358ec78-6156-4255-911e-6448fd2e4224&gt;/wxwebmy/weixintest/views.py" />
+        <option value="&lt;fd19fe07-2c3b-4d3f-b8ee-5568ed607241&gt;/wxwebmy/test1/settings.py" />
+        <option value="&lt;fd19fe07-2c3b-4d3f-b8ee-5568ed607241&gt;/nginx.conf" />
+        <option value="&lt;603a746d-69a5-4f2f-b29f-8ec7a4dd6b19&gt;/roots/微信/weixin_account_time.py" />
+        <option value="$PROJECT_DIR$/爬虫框架/toutiao/start2.py" />
+        <option value="$PROJECT_DIR$/爬虫框架/toutiao/toutiao/spiders/tt_id.py" />
+        <option value="$PROJECT_DIR$/爬虫框架/toutiao/toutiao/settings.py" />
+        <option value="$PROJECT_DIR$/爬虫框架/ttconfig/spider_redis/spider_redis/spiders/sougou.py" />
+        <option value="$PROJECT_DIR$/爬虫框架/ttconfig/spider_redis/spider_redis/settings.py" />
+        <option value="$PROJECT_DIR$/爬虫js代码/爬虫/财联社/cailian.js" />
+        <option value="$PROJECT_DIR$/爬虫js代码/爬虫/国家社保/ceshi.html" />
+        <option value="&lt;603a746d-69a5-4f2f-b29f-8ec7a4dd6b19&gt;/roots/标签/miangongmu.py" />
+        <option value="&lt;109130fb-a7b8-4b3d-9d5f-e253e5a2282e&gt;/ttconfig/spider_redis/spider_redis/middlewares.py" />
+        <option value="&lt;603a746d-69a5-4f2f-b29f-8ec7a4dd6b19&gt;/zhangliang/author_web/author/news_data.py" />
+        <option value="$PROJECT_DIR$/标签/Semantic_processing.py" />
+        <option value="$PROJECT_DIR$/爬虫js代码/爬虫/国家社保/shebao.js" />
+        <option value="$PROJECT_DIR$/爬虫js代码/爬虫/国家社保/demo.py" />
+        <option value="&lt;109130fb-a7b8-4b3d-9d5f-e253e5a2282e&gt;/ttconfig/spider_redis/spider_redis/spiders/weibo.py" />
+        <option value="$PROJECT_DIR$/数据处理清洗/delete_dup.py" />
+        <option value="$PROJECT_DIR$/微信/Daily_Wexin_Content_Copy.py" />
+        <option value="$PROJECT_DIR$/爬虫框架/toutiao/start3.py" />
+        <option value="$PROJECT_DIR$/爬虫框架/toutiao/toutiao/pipelines.py" />
+        <option value="$PROJECT_DIR$/爬虫框架/toutiao/toutiao/spiders/shipin.py" />
+        <option value="$PROJECT_DIR$/爬虫js代码/爬虫/抖音/demo.py" />
+        <option value="$PROJECT_DIR$/标签/tags_update.py" />
+        <option value="&lt;df55dad4-fcf0-44ee-a984-8bd701d47212&gt;/zhangliang/author_web/author/views.py" />
+        <option value="$PROJECT_DIR$/标签/miangongmu.py" />
+        <option value="&lt;603a746d-69a5-4f2f-b29f-8ec7a4dd6b19&gt;/标签/miangongmu.py" />
+        <option value="&lt;df55dad4-fcf0-44ee-a984-8bd701d47212&gt;/zhangliang/author_web/author/news_data.py" />
+        <option value="&lt;e358ec78-6156-4255-911e-6448fd2e4224&gt;/sougou/sougou/spiders/360search.py" />
+        <option value="&lt;e358ec78-6156-4255-911e-6448fd2e4224&gt;/sougou/start.py" />
+        <option value="&lt;e358ec78-6156-4255-911e-6448fd2e4224&gt;/sougou/sougou/spiders/weibo.py" />
+        <option value="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/settings.py" />
+        <option value="$PROJECT_DIR$/数据处理清洗/key.csv" />
+        <option value="&lt;9e825aba-79b8-4aca-a183-419eb77fe59e&gt;/ceshi/ceshi/spiders/weibo.py" />
+        <option value="$PROJECT_DIR$/数据处理清洗/data_import.py" />
+        <option value="&lt;5a6549fe-6573-4d2a-a994-d2f5bff39609&gt;/ttconfig/spider_redis/spider_redis/spiders/insert_2_data.py" />
+        <option value="&lt;109130fb-a7b8-4b3d-9d5f-e253e5a2282e&gt;/ttconfig/spider_redis/spider_redis/spiders/insert_2_data.py" />
+        <option value="&lt;9e825aba-79b8-4aca-a183-419eb77fe59e&gt;/ceshi/ceshi/spiders/web_tt.py" />
+        <option value="&lt;9e825aba-79b8-4aca-a183-419eb77fe59e&gt;/ceshi/ceshi/spiders/souhu.py" />
+        <option value="&lt;9e825aba-79b8-4aca-a183-419eb77fe59e&gt;/ceshi/ceshi/spiders/sougou.py" />
+        <option value="&lt;9e825aba-79b8-4aca-a183-419eb77fe59e&gt;/ceshi/ceshi/settings.py" />
+        <option value="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/souhu.py" />
+        <option value="$PROJECT_DIR$/爬虫js代码/爬虫/极客电竞/demo.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-324" />
+    <option name="width" value="1125" />
+    <option name="height" value="1032" />
+  </component>
+  <component name="ProjectId" id="1wc6kV3d8b5ZoaF2zMF26KTU5h1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="项目程序" type="b2602c69:ProjectViewProjectNode" />
+              <item name="项目程序" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="项目程序" type="b2602c69:ProjectViewProjectNode" />
+              <item name="项目程序" type="462c0819:PsiDirectoryNode" />
+              <item name="爬虫js代码" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="项目程序" type="b2602c69:ProjectViewProjectNode" />
+              <item name="项目程序" type="462c0819:PsiDirectoryNode" />
+              <item name="爬虫js代码" type="462c0819:PsiDirectoryNode" />
+              <item name="爬虫" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="项目程序" type="b2602c69:ProjectViewProjectNode" />
+              <item name="项目程序" type="462c0819:PsiDirectoryNode" />
+              <item name="爬虫js代码" type="462c0819:PsiDirectoryNode" />
+              <item name="爬虫" type="462c0819:PsiDirectoryNode" />
+              <item name="极客电竞" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="项目程序" type="b2602c69:ProjectViewProjectNode" />
+              <item name="项目程序" type="462c0819:PsiDirectoryNode" />
+              <item name="爬虫js代码" type="462c0819:PsiDirectoryNode" />
+              <item name="爬虫" type="462c0819:PsiDirectoryNode" />
+              <item name="财联社" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="ProjectViewState">
+    <option name="foldersAlwaysOnTop" value="false" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ChangesTree.GroupingKeys" value="" />
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="NEW_TOOLWINDOW_STRIPE_DEFAULTS" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="14.17.3" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.17.3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path" value="$PROJECT_DIR$/../../nodejs/node" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="项目程序" is-module-sdk="true">
+        <option name="useSoftWraps" value="true" />
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="项目程序" />
+        <option name="myAddContentRoots" value="false" />
+        <option name="myAddSourceRoots" value="false" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\代码脚本\项目程序\数据处理清洗" />
+      <recent name="D:\代码脚本\项目程序\爬虫js代码\爬虫\抖音" />
+      <recent name="D:\代码脚本\项目程序\微信" />
+      <recent name="D:\代码脚本\项目程序\小程序编译" />
+      <recent name="D:\代码脚本\项目程序\软件代码" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\代码脚本\项目程序\数据处理清洗" />
+      <recent name="D:\代码脚本\项目程序\爬虫框架\ceshi" />
+      <recent name="D:\代码脚本\项目程序\爬虫框架\ceshi\ceshi" />
+      <recent name="D:\代码脚本\项目程序\爬虫框架\ceshi\begin" />
+      <recent name="D:\代码脚本\项目程序\爬虫框架\ceshi\ceshi\spiders" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.start">
+    <configuration name="demo.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="demo.js" working-dir="$PROJECT_DIR$/爬虫js代码/爬虫/抖音">
+      <method v="2" />
+    </configuration>
+    <configuration name="demo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="项目程序" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/爬虫js代码/爬虫/抖音" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/爬虫js代码/爬虫/抖音/demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="miangongmu" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="项目程序" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/标签" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/标签/miangongmu.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="souhu_word" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="项目程序" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/爬虫框架/ceshi" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/爬虫框架/ceshi/souhu_word.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="项目程序" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/爬虫框架/toutiao" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/爬虫框架/toutiao/start.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="update_tt" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="项目程序" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/爬虫框架/toutiao/toutiao/spiders" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/爬虫框架/toutiao/toutiao/spiders/update_tt.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.start" />
+        <item itemvalue="Python.update_tt" />
+        <item itemvalue="Python.souhu_word" />
+        <item itemvalue="Python.demo" />
+        <item itemvalue="Python.miangongmu" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+    <option name="myConnectionType" value="NONE" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b5b4a797-b507-4efa-acf1-3c94ee37b846" name="Changes" comment="数据代码" />
+      <created>1584802939670</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584802939670</updated>
+      <workItem from="1584802941243" duration="42435000" />
+      <workItem from="1584889037510" duration="36378000" />
+      <workItem from="1585464981353" duration="246000" />
+      <workItem from="1586059332599" duration="5680000" />
+      <workItem from="1586435654264" duration="3869000" />
+      <workItem from="1586531713970" duration="6680000" />
+      <workItem from="1586539773211" duration="5415000" />
+      <workItem from="1587106974916" duration="4849000" />
+      <workItem from="1587951284076" duration="5174000" />
+      <workItem from="1588120780108" duration="2486000" />
+      <workItem from="1588207317490" duration="1297000" />
+      <workItem from="1588351178394" duration="82000" />
+      <workItem from="1589100055240" duration="8008000" />
+      <workItem from="1589157235050" duration="17699000" />
+      <workItem from="1589244606943" duration="26839000" />
+      <workItem from="1589297401907" duration="23517000" />
+      <workItem from="1589418117475" duration="36200000" />
+      <workItem from="1589552874878" duration="62598000" />
+      <workItem from="1589778031310" duration="4990000" />
+      <workItem from="1590542060134" duration="57000" />
+      <workItem from="1591196256710" duration="152000" />
+      <workItem from="1591196444012" duration="447000" />
+      <workItem from="1591198835357" duration="4418000" />
+      <workItem from="1591426912447" duration="667000" />
+      <workItem from="1591429572150" duration="489000" />
+      <workItem from="1594176253976" duration="1571000" />
+      <workItem from="1594881108125" duration="258000" />
+      <workItem from="1595044776845" duration="2230000" />
+      <workItem from="1595468692758" duration="626000" />
+      <workItem from="1595469569546" duration="265000" />
+      <workItem from="1595471799547" duration="34074000" />
+      <workItem from="1595810088638" duration="319695000" />
+      <workItem from="1597278914824" duration="8786000" />
+      <workItem from="1597477695671" duration="82205000" />
+      <workItem from="1603071956760" duration="2567000" />
+      <workItem from="1603104551917" duration="2522000" />
+      <workItem from="1603163357847" duration="1204000" />
+      <workItem from="1603192244093" duration="74715000" />
+      <workItem from="1604363658495" duration="8325000" />
+      <workItem from="1604451091250" duration="6330000" />
+      <workItem from="1604622262099" duration="2308000" />
+      <workItem from="1604648053474" duration="20785000" />
+      <workItem from="1605279008973" duration="594000" />
+      <workItem from="1605486790358" duration="1676000" />
+      <workItem from="1605523683117" duration="598000" />
+      <workItem from="1605542288397" duration="1034000" />
+      <workItem from="1605573003264" duration="3368000" />
+      <workItem from="1605608270722" duration="3007000" />
+      <workItem from="1605745683115" duration="3835000" />
+      <workItem from="1605833144331" duration="1372000" />
+      <workItem from="1605936963819" duration="593000" />
+      <workItem from="1606031628729" duration="4308000" />
+      <workItem from="1607387909185" duration="13252000" />
+      <workItem from="1607560586214" duration="23605000" />
+      <workItem from="1607746095129" duration="1823000" />
+      <workItem from="1607906079916" duration="2619000" />
+      <workItem from="1607992912497" duration="4006000" />
+      <workItem from="1608079510555" duration="3997000" />
+      <workItem from="1608165417249" duration="15793000" />
+      <workItem from="1608511316327" duration="18027000" />
+      <workItem from="1608598462185" duration="11864000" />
+      <workItem from="1608621378963" duration="76477000" />
+      <workItem from="1609116159312" duration="11108000" />
+      <workItem from="1609207429839" duration="10851000" />
+      <workItem from="1609808226939" duration="3495000" />
+      <workItem from="1609825435068" duration="15369000" />
+      <workItem from="1609949671398" duration="14478000" />
+      <workItem from="1610170327986" duration="40467000" />
+      <workItem from="1610690805537" duration="3754000" />
+      <workItem from="1610696008719" duration="5487000" />
+      <workItem from="1610930102380" duration="13093000" />
+      <workItem from="1611221051222" duration="2936000" />
+      <workItem from="1611277877371" duration="12099000" />
+      <workItem from="1611647145016" duration="836000" />
+      <workItem from="1611794262298" duration="1206000" />
+      <workItem from="1611880499509" duration="7788000" />
+      <workItem from="1612111261272" duration="6752000" />
+      <workItem from="1612190578599" duration="620000" />
+      <workItem from="1612193267655" duration="5422000" />
+      <workItem from="1612680411207" duration="2345000" />
+      <workItem from="1612774332286" duration="1280000" />
+      <workItem from="1614820919120" duration="3264000" />
+      <workItem from="1614904591178" duration="6861000" />
+      <workItem from="1615448895144" duration="10532000" />
+      <workItem from="1615858471957" duration="4432000" />
+      <workItem from="1616027538706" duration="907000" />
+      <workItem from="1616115431803" duration="5765000" />
+      <workItem from="1616139924883" duration="53347000" />
+      <workItem from="1616724610184" duration="57113000" />
+      <workItem from="1617018636781" duration="8077000" />
+      <workItem from="1617069487267" duration="100503000" />
+      <workItem from="1617514848677" duration="75673000" />
+      <workItem from="1617858223168" duration="46455000" />
+      <workItem from="1617973078073" duration="100481000" />
+      <workItem from="1618416833638" duration="209000" />
+      <workItem from="1618446688109" duration="28365000" />
+      <workItem from="1618488624985" duration="28172000" />
+      <workItem from="1618556028008" duration="666000" />
+      <workItem from="1618557037579" duration="6132000" />
+      <workItem from="1618570180022" duration="14642000" />
+      <workItem from="1618618003038" duration="184241000" />
+      <workItem from="1619103010932" duration="122084000" />
+      <workItem from="1619452550350" duration="5766000" />
+      <workItem from="1619483989430" duration="129389000" />
+      <workItem from="1619939445007" duration="6027000" />
+      <workItem from="1620309042289" duration="2052000" />
+      <workItem from="1620347076069" duration="87292000" />
+      <workItem from="1620866310614" duration="419967000" />
+      <workItem from="1622768969267" duration="95208000" />
+      <workItem from="1623284899052" duration="35383000" />
+      <workItem from="1623394086895" duration="1350000" />
+      <workItem from="1623396812717" duration="9055000" />
+      <workItem from="1623802444851" duration="20458000" />
+      <workItem from="1623889262559" duration="22065000" />
+      <workItem from="1623995041753" duration="5106000" />
+      <workItem from="1624234672405" duration="21833000" />
+      <workItem from="1624407653742" duration="18929000" />
+      <workItem from="1624791090667" duration="61331000" />
+      <workItem from="1625099117592" duration="32959000" />
+      <workItem from="1625444370900" duration="30955000" />
+      <workItem from="1625574777771" duration="2699000" />
+      <workItem from="1625625118048" duration="4156000" />
+      <workItem from="1625662127926" duration="3035000" />
+      <workItem from="1625703629356" duration="13377000" />
+      <workItem from="1625790282156" duration="3322000" />
+      <workItem from="1625799713736" duration="6353000" />
+      <workItem from="1625827502908" duration="2548000" />
+      <workItem from="1625897187562" duration="1975000" />
+      <workItem from="1626049074282" duration="22613000" />
+      <workItem from="1626221917359" duration="8239000" />
+      <workItem from="1626249982762" duration="2354000" />
+      <workItem from="1626252488872" duration="1208000" />
+      <workItem from="1626270568748" duration="1864000" />
+      <workItem from="1626275768095" duration="340000" />
+      <workItem from="1626276122562" duration="26040000" />
+      <workItem from="1626446485109" duration="4760000" />
+      <workItem from="1626653874179" duration="47059000" />
+      <workItem from="1626827288532" duration="733000" />
+      <workItem from="1626828309333" duration="38130000" />
+      <workItem from="1626933805817" duration="1335000" />
+      <workItem from="1626956392170" duration="22249000" />
+      <workItem from="1627016796405" duration="8655000" />
+      <workItem from="1627096014103" duration="2547000" />
+      <workItem from="1627230365330" duration="6662000" />
+      <workItem from="1627373525937" duration="595000" />
+      <workItem from="1627399052272" duration="139000" />
+      <workItem from="1627400143861" duration="2454000" />
+      <workItem from="1627432274220" duration="72623000" />
+      <workItem from="1628036844747" duration="20881000" />
+      <workItem from="1628076303284" duration="2613000" />
+      <workItem from="1628123076063" duration="6264000" />
+      <workItem from="1628139974499" duration="60575000" />
+      <workItem from="1628391321947" duration="11220000" />
+      <workItem from="1628473683103" duration="25428000" />
+      <workItem from="1628574067263" duration="10727000" />
+      <workItem from="1628660006449" duration="11115000" />
+      <workItem from="1628678512228" duration="1800000" />
+      <workItem from="1628745678314" duration="113000" />
+      <workItem from="1628745831725" duration="1875000" />
+      <workItem from="1628748046818" duration="6839000" />
+      <workItem from="1628755119766" duration="549000" />
+      <workItem from="1628755685842" duration="5900000" />
+      <workItem from="1628768907909" duration="1320000" />
+      <workItem from="1628770323378" duration="754000" />
+      <workItem from="1628771500859" duration="5961000" />
+      <workItem from="1628784387135" duration="476000" />
+      <workItem from="1628814451242" duration="2695000" />
+      <workItem from="1628817193429" duration="100000" />
+      <workItem from="1628817315990" duration="35000" />
+      <workItem from="1628817370994" duration="366000" />
+      <workItem from="1628817802742" duration="1806000" />
+      <workItem from="1628819778827" duration="66000" />
+      <workItem from="1628820186869" duration="4121000" />
+      <workItem from="1628824449087" duration="838000" />
+      <workItem from="1628825299786" duration="2281000" />
+      <workItem from="1628829090815" duration="112000" />
+      <workItem from="1628829250282" duration="2231000" />
+      <workItem from="1628836415796" duration="7809000" />
+      <workItem from="1628845439054" duration="339000" />
+      <workItem from="1628845909734" duration="1723000" />
+      <workItem from="1628847707067" duration="993000" />
+      <workItem from="1628853161804" duration="153000" />
+      <workItem from="1628853440461" duration="83000" />
+      <workItem from="1628853532359" duration="5712000" />
+      <workItem from="1629003188860" duration="681000" />
+      <workItem from="1629012216055" duration="998000" />
+      <workItem from="1629036149895" duration="3834000" />
+      <workItem from="1629041807620" duration="1226000" />
+      <workItem from="1629073616158" duration="5084000" />
+      <workItem from="1629080193943" duration="20251000" />
+      <workItem from="1629123083019" duration="8219000" />
+      <workItem from="1629162380156" duration="8983000" />
+      <workItem from="1629176658192" duration="7279000" />
+      <workItem from="1629695403812" duration="135000" />
+      <workItem from="1629695558231" duration="70000" />
+      <workItem from="1629695644606" duration="118000" />
+    </task>
+    <task id="LOCAL-00001" summary="修改">
+      <created>1584808794797</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584808794797</updated>
+    </task>
+    <task id="LOCAL-00002" summary="修改2">
+      <created>1584814797056</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1584814797056</updated>
+    </task>
+    <task id="LOCAL-00003" summary="修改999">
+      <created>1584815245524</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1584815245524</updated>
+    </task>
+    <task id="LOCAL-00004" summary="修改999">
+      <created>1584815341300</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1584815341300</updated>
+    </task>
+    <task id="LOCAL-00005" summary="修改999">
+      <created>1584815489483</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1584815489483</updated>
+    </task>
+    <task id="LOCAL-00006" summary="ppppp">
+      <created>1584815551662</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1584815551662</updated>
+    </task>
+    <task id="LOCAL-00007" summary="22222">
+      <created>1584815803766</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1584815803766</updated>
+    </task>
+    <task id="LOCAL-00008" summary="22222000">
+      <created>1584816242349</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1584816242349</updated>
+    </task>
+    <task id="LOCAL-00009" summary="2222200000">
+      <created>1584816301475</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1584816301475</updated>
+    </task>
+    <task id="LOCAL-00010" summary="爬虫修改代码">
+      <created>1584816364422</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1584816364422</updated>
+    </task>
+    <task id="LOCAL-00011" summary="爬虫第一次">
+      <created>1584849291226</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1584849291226</updated>
+    </task>
+    <task id="LOCAL-00012" summary="爬虫第二次上传">
+      <created>1584860522860</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1584860522861</updated>
+    </task>
+    <task id="LOCAL-00013" summary="爬虫第二次上传">
+      <created>1584878823805</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1584878823805</updated>
+    </task>
+    <task id="LOCAL-00014" summary="0:18">
+      <created>1584893893462</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1584893893462</updated>
+    </task>
+    <task id="LOCAL-00015" summary="0:18">
+      <created>1584894004388</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1584894004388</updated>
+    </task>
+    <task id="LOCAL-00016" summary="0:18">
+      <created>1584977582603</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1584977582603</updated>
+    </task>
+    <task id="LOCAL-00017" summary="0:18">
+      <created>1585132914291</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1585132914291</updated>
+    </task>
+    <task id="LOCAL-00018" summary="0:18">
+      <created>1585154676564</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1585154676565</updated>
+    </task>
+    <task id="LOCAL-00019" summary="0:18">
+      <created>1589561037488</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1589561037488</updated>
+    </task>
+    <task id="LOCAL-00020" summary="0:18">
+      <created>1629684248930</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1629684248931</updated>
+    </task>
+    <task id="LOCAL-00021" summary="数据代码">
+      <created>1629686478211</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1629686478211</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="pytest_in_mayidata_py - 2021.06.01 at 22h 07m 38s.xml">
+      <configuration name="pytest in mayidata.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_mayidata_py - 2021.06.01 at 22h 07m 55s.xml">
+      <configuration name="pytest in mayidata.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_mayidata_py - 2021.06.01 at 22h 08m 03s.xml">
+      <configuration name="pytest in mayidata.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_mayidata_py - 2021.06.01 at 22h 08m 20s.xml">
+      <configuration name="pytest in mayidata.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_mian_py - 2021.06.01 at 22h 08m 43s.xml">
+      <configuration name="pytest in mian.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_mayidata_test2 - 2021.06.01 at 22h 10m 39s.xml">
+      <configuration name="pytest for mayidata.test2" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_mayidata_py - 2021.06.01 at 22h 11m 34s.xml">
+      <configuration name="pytest in mayidata.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in__MAYIDATA_PY - 2021.06.01 at 22h 12m 10s.xml">
+      <configuration name="pytest in _MAYIDATA.PY" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_mayi_py - 2021.06.01 at 22h 13m 04s.xml">
+      <configuration name="pytest in mayi.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_data_shuju_py - 2021.06.01 at 22h 13m 51s.xml">
+      <configuration name="pytest in data_shuju.py" configurationId="tests" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3542105000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7084746" visible="true" weight="0.07281554" />
+      <window_info id="Structure" order="1" sideWeight="0.29152542" side_tool="true" weight="0.20631067" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="1" />
+      <window_info anchor="bottom" id="Version Control" order="2" sideWeight="0.4995958" weight="0.3623446" />
+      <window_info anchor="bottom" id="Python Console" order="3" weight="0.3141264" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.22346368" />
+      <window_info anchor="bottom" x="78" y="27" width="1089" height="600" id="Terminal" order="6" type="FLOATING" weight="0.49718574" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.80906147" visible="true" weight="0.53817505" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.5977654" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="11" weight="0.32774675" />
+      <window_info active="true" anchor="bottom" id="GitHub Pull Requests" order="12" weight="0.3285968" />
+      <window_info anchor="bottom" id="File Transfer" order="13" weight="0.19739293" />
+      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.371059" side_tool="true" weight="0.33333334" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="15" weight="0.32960895" />
+      <window_info anchor="bottom" id="Database" order="16" sideWeight="0.19093852" side_tool="true" weight="0.48417133" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.3597413" />
+      <window_info anchor="right" id="Remote Host" order="4" sideWeight="0.57739556" visible="true" weight="0.067961164" />
+      <window_info anchor="right" id="aiXcoder" order="5" sideWeight="0.85257983" weight="0.32983023" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7134146" visible="true" weight="0.15683104" />
+      <window_info id="Structure" order="1" sideWeight="0.28658536" side_tool="true" weight="0.060630556" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="1" />
+      <window_info anchor="bottom" id="Version Control" order="2" sideWeight="0.4995958" weight="0.3623446" />
+      <window_info anchor="bottom" id="Python Console" order="3" weight="0.3141264" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.22346368" />
+      <window_info anchor="bottom" x="-473" y="429" width="971" height="306" id="Terminal" order="6" type="FLOATING" weight="0.49718574" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.6297494" visible="true" weight="0.33333334" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.5977654" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="11" weight="0.32774675" />
+      <window_info active="true" anchor="bottom" id="GitHub Pull Requests" order="12" weight="0.3285968" />
+      <window_info anchor="bottom" id="File Transfer" order="13" weight="0.37988827" />
+      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.3702506" side_tool="true" weight="0.38733706" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="15" weight="0.32960895" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.32983023" />
+      <window_info anchor="right" id="Remote Host" order="4" sideWeight="0.57739556" visible="true" weight="0.18755053" />
+      <window_info anchor="right" id="aiXcoder" order="5" sideWeight="0.85257983" weight="0.32983023" />
+      <window_info anchor="right" id="Database" order="6" sideWeight="0.14742015" side_tool="true" weight="0.32983023" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="285fa43e-e179-44ef-ace6-a25f93585cd4">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:D:/代码脚本/项目程序/记者" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="e0d1e2fb-f7b7-4281-b7c0-0adc3e32fcc5">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:D:/代码脚本/项目程序/文件上传" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="285fa43e-e179-44ef-ace6-a25f93585cd4" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="修改" />
+    <MESSAGE value="修改2" />
+    <MESSAGE value="修改999" />
+    <MESSAGE value="ppppp" />
+    <MESSAGE value="22222" />
+    <MESSAGE value="22222000" />
+    <MESSAGE value="2222200000" />
+    <MESSAGE value="爬虫修改代码" />
+    <MESSAGE value="爬虫第一次" />
+    <MESSAGE value="爬虫第二次上传" />
+    <MESSAGE value="0:18" />
+    <MESSAGE value="数据代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="数据代码" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>remoteDeploymentFS://&lt;9e825aba-79b8-4aca-a183-419eb77fe59e&gt;/save_pdf.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>remoteDeploymentFS://&lt;603a746d-69a5-4f2f-b29f-8ec7a4dd6b19&gt;/fubencopy/weixin_account_time.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/$meiti.coverage" NAME="meiti Coverage Results" MODIFIED="1625101255196" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/中基协" />
+    <SUITE FILE_PATH="coverage/$pytest_in_mayiceshi_py.coverage" NAME="pytest in mayiceshi.py Coverage Results" MODIFIED="1622556407837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/软件代码" />
+    <SUITE FILE_PATH="coverage/$Weixin_Login.coverage" NAME="Weixin_Login Coverage Results" MODIFIED="1629419733407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/微信" />
+    <SUITE FILE_PATH="coverage/$ceshi__1_.coverage" NAME="ceshi (1) Coverage Results" MODIFIED="1618559460656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/js" />
+    <SUITE FILE_PATH="coverage/$start2.coverage" NAME="start2 Coverage Results" MODIFIED="1628149618137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/toutiao" />
+    <SUITE FILE_PATH="coverage/$code.coverage" NAME="code Coverage Results" MODIFIED="1615365586612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫js代码" />
+    <SUITE FILE_PATH="coverage/$items.coverage" NAME="items Coverage Results" MODIFIED="1591429978109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/sougou/sougou" />
+    <SUITE FILE_PATH="coverage/$start_sg__1_.coverage" NAME="start_sg (1) Coverage Results" MODIFIED="1621322766926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/ttconfig/spider_redis" />
+    <SUITE FILE_PATH="coverage/$start2__1_.coverage" NAME="start2 (1) Coverage Results" MODIFIED="1619681221439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/toutiao" />
+    <SUITE FILE_PATH="coverage/$start5.coverage" NAME="start5 Coverage Results" MODIFIED="1619665989988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/ceshi" />
+    <SUITE FILE_PATH="coverage/$demo__2_.coverage" NAME="demo (2) Coverage Results" MODIFIED="1626425143686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫js代码/爬虫/财联社" />
+    <SUITE FILE_PATH="coverage/$weixin_account_time.coverage" NAME="weixin_account_time Coverage Results" MODIFIED="1623224562148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/微信" />
+    <SUITE FILE_PATH="coverage/$start__3_.coverage" NAME="start (3) Coverage Results" MODIFIED="1619146917499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ttconfig/spider_redis" />
+    <SUITE FILE_PATH="coverage/$pytest_for_mayi_test_example.coverage" NAME="pytest for mayi.test_example Coverage Results" MODIFIED="1622531464859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/软件代码" />
+    <SUITE FILE_PATH="coverage/$start_sg.coverage" NAME="start_sg Coverage Results" MODIFIED="1629513647354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/ceshi" />
+    <SUITE FILE_PATH="coverage/$start.coverage" NAME="start Coverage Results" MODIFIED="1629250094227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/toutiao" />
+    <SUITE FILE_PATH="coverage/$Semantic_processing.coverage" NAME="Semantic_processing Coverage Results" MODIFIED="1628040195247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/标签" />
+    <SUITE FILE_PATH="coverage/$weixinceshi.coverage" NAME="weixinceshi Coverage Results" MODIFIED="1627436406495" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/微信" />
+    <SUITE FILE_PATH="coverage/$wangyidemo.coverage" NAME="wangyidemo Coverage Results" MODIFIED="1625897987045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫js代码/爬虫/网易云编译" />
+    <SUITE FILE_PATH="coverage/$tags_update.coverage" NAME="tags_update Coverage Results" MODIFIED="1629424548328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/标签" />
+    <SUITE FILE_PATH="coverage/$test.coverage" NAME="test Coverage Results" MODIFIED="1618717964341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/" />
+    <SUITE FILE_PATH="coverage/$data_import.coverage" NAME="data_import Coverage Results" MODIFIED="1628576705733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/数据处理清洗" />
+    <SUITE FILE_PATH="coverage/$pytest_for_mayidata_test2.coverage" NAME="pytest for mayidata.test2 Coverage Results" MODIFIED="1622556637933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/软件代码" />
+    <SUITE FILE_PATH="coverage/$data_shuju.coverage" NAME="data_shuju Coverage Results" MODIFIED="1622614031291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/软件代码" />
+    <SUITE FILE_PATH="coverage/$souhu_start_web.coverage" NAME="souhu_start_web Coverage Results" MODIFIED="1629105870243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/ceshi" />
+    <SUITE FILE_PATH="coverage/$start_s.coverage" NAME="start_s Coverage Results" MODIFIED="1620891142702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/ttconfig/spider_redis" />
+    <SUITE FILE_PATH="coverage/$baidu.coverage" NAME="baidu Coverage Results" MODIFIED="1589176406911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/sougou/sougou/spiders" />
+    <SUITE FILE_PATH="coverage/$demo__1_.coverage" NAME="demo (1) Coverage Results" MODIFIED="1628399312775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫js代码/爬虫/国家社保" />
+    <SUITE FILE_PATH="coverage/$mayi_user_info.coverage" NAME="mayi_user_info Coverage Results" MODIFIED="1623028969486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/软件代码" />
+    <SUITE FILE_PATH="coverage/$mayi.coverage" NAME="mayi Coverage Results" MODIFIED="1622727316933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/软件代码" />
+    <SUITE FILE_PATH="coverage/$toutiao.coverage" NAME="toutiao Coverage Results" MODIFIED="1618559552763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders" />
+    <SUITE FILE_PATH="coverage/$start__4_.coverage" NAME="start (4) Coverage Results" MODIFIED="1618735498640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/ceshi" />
+    <SUITE FILE_PATH="coverage/$souhu_web.coverage" NAME="souhu_web Coverage Results" MODIFIED="1629105821702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders" />
+    <SUITE FILE_PATH="coverage/$mayidata.coverage" NAME="mayidata Coverage Results" MODIFIED="1622556682063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/软件代码" />
+    <SUITE FILE_PATH="coverage/$souhu_start_id.coverage" NAME="souhu_start_id Coverage Results" MODIFIED="1627881421731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/ceshi" />
+    <SUITE FILE_PATH="coverage/$miangongmu.coverage" NAME="miangongmu Coverage Results" MODIFIED="1629679635435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/标签" />
+    <SUITE FILE_PATH="coverage/$tiantian_api.coverage" NAME="tiantian_api Coverage Results" MODIFIED="1621839993241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫js代码/爬虫" />
+    <SUITE FILE_PATH="coverage/$run.coverage" NAME="run Coverage Results" MODIFIED="1624347272493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/微信/wechat-spider-master/wechat-spider" />
+    <SUITE FILE_PATH="coverage/$mayi_data_.coverage" NAME="mayi_data_ Coverage Results" MODIFIED="1623047081928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/软件代码" />
+    <SUITE FILE_PATH="coverage/$middlewares.coverage" NAME="middlewares Coverage Results" MODIFIED="1628847476018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/ceshi/ceshi" />
+    <SUITE FILE_PATH="coverage/$import_keyword.coverage" NAME="import_keyword Coverage Results" MODIFIED="1591429988755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/sougou/sougou" />
+    <SUITE FILE_PATH="coverage/$ceshi.coverage" NAME="ceshi Coverage Results" MODIFIED="1628824461784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/js" />
+    <SUITE FILE_PATH="coverage/$settings.coverage" NAME="settings Coverage Results" MODIFIED="1585067480838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/sougou/sougou" />
+    <SUITE FILE_PATH="coverage/$all_data_code.coverage" NAME="all_data_code Coverage Results" MODIFIED="1623027942140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/软件代码" />
+    <SUITE FILE_PATH="coverage/$data_2_insert.coverage" NAME="data_2_insert Coverage Results" MODIFIED="1619237301289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/ttconfig/spider_redis/spider_redis/spiders" />
+    <SUITE FILE_PATH="coverage/$pytest_in_mian_py.coverage" NAME="pytest in mian.py Coverage Results" MODIFIED="1622556522406" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/标签" />
+    <SUITE FILE_PATH="coverage/$pytest_in_mayi_py.coverage" NAME="pytest in mayi.py Coverage Results" MODIFIED="1622556778809" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/软件代码" />
+    <SUITE FILE_PATH="coverage/$start_insert_data.coverage" NAME="start_insert_data Coverage Results" MODIFIED="1628058303141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/ttconfig/spider_redis" />
+    <SUITE FILE_PATH="coverage/$tt_id.coverage" NAME="tt_id Coverage Results" MODIFIED="1628825630849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders" />
+    <SUITE FILE_PATH="coverage/$zjx_api_data.coverage" NAME="zjx_api_data Coverage Results" MODIFIED="1622441523239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/中基协" />
+    <SUITE FILE_PATH="coverage/$post_api.coverage" NAME="post_api Coverage Results" MODIFIED="1603072320238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/文件上传" />
+    <SUITE FILE_PATH="coverage/$pipelines.coverage" NAME="pipelines Coverage Results" MODIFIED="1619069483068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/ttconfig/spider_redis/spider_redis" />
+    <SUITE FILE_PATH="coverage/$ciyun.coverage" NAME="ciyun Coverage Results" MODIFIED="1618296697275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/词云图" />
+    <SUITE FILE_PATH="coverage/$delete_dup.coverage" NAME="delete_dup Coverage Results" MODIFIED="1629125760553" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/数据处理清洗" />
+    <SUITE FILE_PATH="coverage/$get_weibo.coverage" NAME="get_weibo Coverage Results" MODIFIED="1621315650009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/zhangliang" />
+    <SUITE FILE_PATH="coverage/$create_tables.coverage" NAME="create_tables Coverage Results" MODIFIED="1623981547847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/微信/wechat-spider-master/wechat-spider" />
+    <SUITE FILE_PATH="coverage/$update_tt.coverage" NAME="update_tt Coverage Results" MODIFIED="1629179761308" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/toutiao/toutiao/spiders" />
+    <SUITE FILE_PATH="coverage/$mian.coverage" NAME="mian Coverage Results" MODIFIED="1607406276647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/标签" />
+    <SUITE FILE_PATH="coverage/$start3.coverage" NAME="start3 Coverage Results" MODIFIED="1628470947821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/toutiao" />
+    <SUITE FILE_PATH="coverage/$pytest_in_mayidata_py.coverage" NAME="pytest in data_shuju.py Coverage Results" MODIFIED="1622556827335" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/软件代码" />
+    <SUITE FILE_PATH="coverage/$delete_file.coverage" NAME="delete_file Coverage Results" MODIFIED="1629441467006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/数据处理清洗" />
+    <SUITE FILE_PATH="coverage/$start__1_.coverage" NAME="start (1) Coverage Results" MODIFIED="1621407028504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/ttconfig/spider_redis" />
+    <SUITE FILE_PATH="coverage/$pytest_for_mayiceshi_test.coverage" NAME="pytest for mayiceshi.test Coverage Results" MODIFIED="1622556382293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/软件代码" />
+    <SUITE FILE_PATH="coverage/$insert_2_data.coverage" NAME="insert_2_data Coverage Results" MODIFIED="1628040721443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/ttconfig/spider_redis/spider_redis/spiders" />
+    <SUITE FILE_PATH="coverage/$souhu_word.coverage" NAME="souhu_word Coverage Results" MODIFIED="1629513562391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/ceshi" />
+    <SUITE FILE_PATH="coverage/$boss.coverage" NAME="boss Coverage Results" MODIFIED="1589606970980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/sougou/sougou/spiders" />
+    <SUITE FILE_PATH="coverage/$PDF.coverage" NAME="PDF Coverage Results" MODIFIED="1622773592401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/文件上传" />
+    <SUITE FILE_PATH="coverage/$start__2_.coverage" NAME="start (2) Coverage Results" MODIFIED="1622471264055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/toutiao" />
+    <SUITE FILE_PATH="coverage/$post_ciyun.coverage" NAME="post_ciyun Coverage Results" MODIFIED="1610505872984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/词云图" />
+    <SUITE FILE_PATH="coverage/$.coverage" NAME="记者脚本 Coverage Results" MODIFIED="1628818636638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/记者" />
+    <SUITE FILE_PATH="coverage/$demo.coverage" NAME="demo Coverage Results" MODIFIED="1629682028200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫js代码/爬虫/抖音" />
+    <SUITE FILE_PATH="coverage/$insert_1_data.coverage" NAME="insert_1_data Coverage Results" MODIFIED="1619495373005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/ttconfig/spider_redis/spider_redis/spiders" />
+    <SUITE FILE_PATH="coverage/$sougou.coverage" NAME="sougou Coverage Results" MODIFIED="1627526662367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/ttconfig/spider_redis/spider_redis/spiders" />
+    <SUITE FILE_PATH="coverage/$toutiao_data.coverage" NAME="toutiao_data Coverage Results" MODIFIED="1623046005574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/软件代码" />
+    <SUITE FILE_PATH="coverage/$zjx_data.coverage" NAME="zjx_data Coverage Results" MODIFIED="1617351101650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/中基协" />
+    <SUITE FILE_PATH="coverage/$data_insert.coverage" NAME="data_insert Coverage Results" MODIFIED="1619274932032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/ttconfig/spider_redis/spider_redis/spiders" />
+    <SUITE FILE_PATH="coverage/$AES.coverage" NAME="AES加密测试 Coverage Results" MODIFIED="1624515851035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫js代码/AES加密" />
+    <SUITE FILE_PATH="coverage/$start_web_tt.coverage" NAME="start_web_tt Coverage Results" MODIFIED="1628755942196" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/ceshi" />
+    <SUITE FILE_PATH="coverage/$js_weixin.coverage" NAME="js_weixin Coverage Results" MODIFIED="1623854806405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫js代码/爬虫/微信公众号" />
+    <SUITE FILE_PATH="coverage/$crawl_paper.coverage" NAME="crawl_paper Coverage Results" MODIFIED="1624413786831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/guba" />
+    <SUITE FILE_PATH="coverage/$Daily_Wexin_Content_Copy.coverage" NAME="Daily_Wexin_Content_Copy Coverage Results" MODIFIED="1628469093281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/微信" />
+    <SUITE FILE_PATH="coverage/$Get_cookies.coverage" NAME="Get_cookies Coverage Results" MODIFIED="1618492965347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/toutiao/toutiao" />
+    <SUITE FILE_PATH="coverage/$proxyPool.coverage" NAME="proxyPool Coverage Results" MODIFIED="1617692599131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/proxy_pool-master" />
+    <SUITE FILE_PATH="coverage/$ceshi12.coverage" NAME="ceshi12 Coverage Results" MODIFIED="1624847784400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/文件上传" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/网页/xxwwweb/weixintest/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-792">
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫框架/ttconfig/spider_redis/start_insert_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫框架/ttconfig/spider_redis/spider_redis/spiders/insert_2_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1980">
+          <caret line="90" column="46" selection-start-line="90" selection-start-column="46" selection-end-line="90" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/网页/wxwebmy/weixintest/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫框架/ttconfig/spider_redis/spider_redis/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="97" column="7" selection-start-line="97" selection-start-column="7" selection-end-line="97" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫框架/ceshi/ceshi/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Python36/Lib/site-packages/scrapy/utils/request.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="74" column="30" selection-start-line="74" selection-start-column="30" selection-end-line="74" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫框架/toutiao/toutiao/spiders/webtt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-968">
+          <caret line="46" column="78" selection-start-line="46" selection-start-column="78" selection-end-line="46" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/tt_id.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2222">
+          <caret line="65" column="8" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="18" />
+          <folding>
+            <element signature="e#24#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫框架/ttconfig/spider_redis/start.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫框架/ttconfig/spider_redis/start_sg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="38" lean-forward="true" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫框架/ttconfig/spider_redis/spider_redis/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="106" selection-start-line="106" selection-end-line="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫框架/ttconfig/spider_redis/spider_redis/spiders/sougou.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="22" />
+          <folding>
+            <element signature="e#24#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫框架/toutiao/start2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫js代码/爬虫/国家社保/ceshi.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫js代码/爬虫/网易云编译/wangyidemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-925" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫js代码/爬虫/财联社/demo.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫js代码/爬虫/wps登陆/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫js代码/爬虫/国家社保/shebao.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="71917" column="1" selection-start-line="71917" selection-start-column="1" selection-end-line="71917" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/标签/Semantic_processing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="946">
+          <caret line="49" column="40" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫js代码/爬虫/国家社保/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="68" column="29" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫框架/toutiao/start.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫框架/toutiao/start3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫框架/toutiao/toutiao/spiders/tt_id_.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1320" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫框架/toutiao/toutiao/spiders/tt_id.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="50" column="53" lean-forward="true" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
+          <folding>
+            <element signature="e#24#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫框架/toutiao/toutiao/spiders/splash_tt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫框架/toutiao/toutiao/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#194#208#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫框架/toutiao/toutiao/spiders/shipin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/微信/Daily_Wexin_Content_Copy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫js代码/爬虫/抖音/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="4" column="39" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/标签/miangongmu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10276">
+          <caret line="684" column="37" selection-start-line="684" selection-start-column="37" selection-end-line="684" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/weibo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="67" column="9" selection-start-line="67" selection-start-column="9" selection-end-line="68" selection-end-column="152" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫框架/ceshi/start_wb.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/数据处理清洗/names.csv" />
+    <entry file="file://$PROJECT_DIR$/数据处理清洗/company_key.csv" />
+    <entry file="file://$PROJECT_DIR$/数据处理清洗/example.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/标签/tags_update.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6600">
+          <caret line="300" column="40" selection-start-line="300" selection-start-column="40" selection-end-line="300" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/web_tt.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/数据处理清洗/data_import.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫框架/ceshi/ceshi/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2068">
+          <caret line="94" selection-start-line="94" selection-end-line="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/数据处理清洗/meiti.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫框架/toutiao/toutiao/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3784">
+          <caret line="172" selection-start-line="172" selection-end-line="179" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/数据处理清洗/key.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="156" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/数据处理清洗/delete_dup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫框架/ceshi/start_web_tt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/微信/Weixin_Login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫框架/ceshi/start_sg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫框架/ceshi/souhu_word.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/souhu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2068">
+          <caret line="108" column="52" selection-start-line="108" selection-start-column="52" selection-end-line="108" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫js代码/爬虫/财联社/cailian.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="1" selection-end-line="19" selection-end-column="1" />
+          <folding>
+            <element signature="e#1753#33492#0" />
+            <element signature="e#33522#40039#0" />
+            <element signature="e#40066#42729#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫js代码/爬虫/极客电竞/demo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="183" column="17" lean-forward="true" selection-start-line="183" selection-start-column="17" selection-end-line="183" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.34336677" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
