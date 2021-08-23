@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "开发票",
+    "usingComponents": {
+        "custom-wrapper": "../../../custom-wrapper",
+        "comp": "../../../comp"
+    }
+}

@@ -26,6 +26,9 @@ dbname2 = 'wemedia'
 conn2 = pymysql.connect(dbhost2, dbuser2, passwd2, dbname2, charset='utf8')
 cur2 = conn2.cursor()
 
+
+
+
 def get_sysparam_info(category_input):
     get_key_sql = "select variable,info from sysparam where variable = %s"
 
@@ -153,7 +156,7 @@ def is_number(s):#判断字符串是否为数字
     return False
 
 tags_key = ['M','H', 'J', 'T', 'A', 'S', 'B', 'Y', 'U', 'V', 'P', 'F', 'Z',
-            'D', 'at', '*', '$', 'R', 'N', 'O', 'E', 'G','W','C','#','K']
+            'D', 'at', '*', '$', 'R', 'N', 'O', 'E', 'G','W','C','#','K','X']
 
 dict_scores ={'negative1': '-1',
                'positive1': '1'}
@@ -367,7 +370,9 @@ def tags_write(jijin,title,content,all_content,text_all):
 
                     real_tags = f'[H]'
                     copy_end_tags.add(real_tags)
-                    copy_end_tags.add('[@]')
+                    if '季报' not in sentence:
+                        copy_end_tags.add('[@]')
+
 
                     if '[[GG]]' in sentence:
                         copy_end_tags.add('[Z]')
@@ -378,7 +383,8 @@ def tags_write(jijin,title,content,all_content,text_all):
 
                     real_tags = f'[H]'
                     copy_end_tags.add(real_tags)
-                    copy_end_tags.add('[@]')
+                    if '季报' not in sentence:
+                        copy_end_tags.add('[@]')
                     if '[[GG]]' in sentence:
                         copy_end_tags.add('[Z]')
                     exclude_h_sentence_list.append(sentence)
@@ -495,7 +501,7 @@ def tags_write(jijin,title,content,all_content,text_all):
                 GS_JL_words = ['[[JL]]+[[GS]]+' + i for i in value_single]
 
                 AT_sentence = [(sentence,j) for j in GS_JL_words if (j.split('+')[0] in sentence or
-                               j.split('+')[1] in sentence) and j.split('+')[2] in sentence]
+                               j.split('+')[1] in sentence) and j.split('+')[2] in sentence and '季报' not in sentence]
 
                 if AT_sentence :
                     print(AT_sentence,111111111111123333333334112)
@@ -595,9 +601,9 @@ def tags_write(jijin,title,content,all_content,text_all):
                 'NUMBER年NUMBER月NUMBER日 NUMBER月NUMBER日'
                 sence_list = [i for i in a if i in sentences ]
                 if sence_list:
-
+                    print(sence_list,12345678909)
                     num_sen = [sentences.find(i,0) for i in ['[[CP]]','[[GS]]','[[JL]]']]
-
+                    print(num_sen,1234)
                     if -1 in num_sen:
                         num_sen = set(num_sen)
                         num_sen.discard(-1)
@@ -663,13 +669,13 @@ def tags_write(jijin,title,content,all_content,text_all):
 
                     key = 'T'
                     copy_end_tags.add(f'[{key}]')
-
-                T_all_word = ['十大股东', '10大股东' , '十大流通股东'  ,'前十大名单',
-                              '重仓股名单', '减持', '增持','国内融资汇总', '重仓股名单']
-                T_all_ = [i for i in ['[[CP]]','[[GS]]'] if i in sentence and any(i in sentence for i in T_all_word)]
+                T_all_word = ['十大股东', '10大股东', '十大流通股东', '前十大名单',
+                              '重仓股名单', '减持', '增持', '国内融资汇总', '重仓股名单']
+                T_all_ = [i for i in ['[[CP]]', '[[GS]]'] if i in sentence and any(i in sentence for i in T_all_word)]
                 if T_all_:
                     key = 'T1'
                     copy_end_tags.add(f'[{key}]')
+
             if key == 'Y':
 
                 GS_words = ['[[GS]]+' + i for i in value_single]
@@ -761,7 +767,18 @@ def tags_write(jijin,title,content,all_content,text_all):
                                 key = '$'
 
                                 copy_end_tags.add(f'[{key}]')
+            if key == 'X':
+                print(title,1111111123123)
+                X_words = [ i for i in value_single]
+                print(X_words)
+                X_sentence = [(sentence, j) for j in X_words if j in title+sentence
+                                                                 ]
+                print(X_sentence,222222222212)
+                if X_sentence:
+                    key = 'X'
 
+                    copy_end_tags.add(f'[{key}]')
+    print(copy_end_tags,2222222121)
     return copy_end_tags
 
 import time
@@ -806,9 +823,9 @@ for jj_name in jijin_list:#获取同义词
 
             check_neg_pos_score,negtive_count,postive_count = check_neg_pos(text_all, score_info_dict, jj_name)
 
-            print(check_neg_pos_score,negtive_count,postive_count,222222222222222222222222111111111111111113)
+
             tags_reslut = tags_write(jijin, title, content,textlist,text_all)
-            print(tags_reslut,1111111111111111111999999999999901111)
+
             jijin_count = ''.join(text_all).count(jijin)
 
             tags_reslut = ''.join(tags_reslut)
@@ -827,8 +844,11 @@ for jj_name in jijin_list:#获取同义词
                 print(title_score_result,'标题里面。。。。。。。。。。。。。。')
                 if '@' not in tags_reslut:
                     tags_reslut = tags_reslut+'[@]'
-            if  '[@1]' in tags_reslut:
+            if  '[@1]' in tags_reslut and '[@]' in tags_reslut:
                 tags_reslut = re.sub(r'\[\#\]|\[@1\]', '', tags_reslut)
+            elif '[@1]' in tags_reslut and '[@]' not in tags_reslut:
+                tags_reslut = re.sub(r'\[\#\]|\[@1\]', '', tags_reslut)
+                tags_reslut = tags_reslut + "[@]"
                 check_neg_pos_score = 2
             # elif check_neg_pos_score == 2:
             #     tags_reslut = tags_reslut + '[@]'
@@ -935,12 +955,18 @@ for jj_name in jijin_list:#获取同义词
                 check_neg_pos_score = 0
             if '灵犀君' in reporter:
                 check_neg_pos_score =0
+            if  '[T1]' in tags_reslut or '[X]' in tags_reslut:
+                tags_reslut = re.sub(r'\[T1\]', '', tags_reslut)
+
+
+                scores = 0
+
             sql = '''update hisinfo_cx set category='{0}',auto_category='{0}',scores = {1} where id = {2}'''.format(
                 tags_reslut + '.', str(check_neg_pos_score) + '.', id_)
             logger.debug(sql)
             print(sql)
-            # cur.execute(sql)
-            # db.commit()
+            cur.execute(sql)
+            db.commit()
         except Exception as e:
             print(e)
 

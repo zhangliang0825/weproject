@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "邀请记录",
+    "usingComponents": {
+        "custom-wrapper": "../../custom-wrapper",
+        "comp": "../../comp"
+    }
+}

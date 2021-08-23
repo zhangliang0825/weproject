@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "中国餐饮2020年度排行榜",
+    "usingComponents": {
+        "custom-wrapper": "../../../custom-wrapper",
+        "comp": "../../../comp"
+    }
+}

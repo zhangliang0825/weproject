@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "全部供应商",
+    "usingComponents": {
+        "custom-wrapper": "../../custom-wrapper",
+        "comp": "../../comp"
+    }
+}

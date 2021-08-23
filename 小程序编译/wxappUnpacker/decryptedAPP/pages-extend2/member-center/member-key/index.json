@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "我的钥匙",
+    "usingComponents": {
+        "custom-wrapper": "../../../custom-wrapper",
+        "comp": "../../../comp"
+    }
+}

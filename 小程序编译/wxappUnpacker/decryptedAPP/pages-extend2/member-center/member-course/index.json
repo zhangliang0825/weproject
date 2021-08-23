@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "已参加课程",
+    "usingComponents": {
+        "custom-wrapper": "../../../custom-wrapper",
+        "comp": "../../../comp"
+    }
+}

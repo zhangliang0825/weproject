@@ -46,9 +46,9 @@ class SouhuSpider(scrapy.Spider):
 
         sql = 'select word from words'
         self.cursor.execute(sql)
-        sql = 'select word from words where del_flag = 0 ORDER BY choose_flag ASC'
+        sql = 'select word from words where del_flag = 0  and id = 145 ORDER BY choose_flag ASC'
         self.cursor.execute(sql)
-        self.word_data = set([i[0].replace("+", "") for i in self.cursor.fetchall()])
+        self.word_data = set([i[0].replace("+", " ") for i in self.cursor.fetchall()])
         self.mylog = getLoger(self.name + '.log')
 
 

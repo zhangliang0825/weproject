@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>入库</title>
+</head>
+<body>
+
+    <div>入库成功</div>
+    {# 可制作一个弹窗 报警：从刚插入的这个库中查询出本条id#}
+    <div>
+        <form action=""  target="nm_iframe">
+        <select name="name">
+        <option name="name" value="长信">长信</option>
+        <option name="name" value="富安达">富安达</option>
+        <option name="name" value="中邮">中邮</option>
+        <option name="name" value="兴全">兴全</option>
+            <option name="name" value="中欧">中欧</option>
+            <option name="name" value="嘉实">嘉实</option>
+            <option name="name" value="建信">建信</option>
+            <option name="name" value="农银汇理">农银汇理</option>
+            <option name="name" value="国寿安保">国寿安保</option>
+            <option name="name" value="新华">新华</option>
+            <option name="name" value="银华">银华</option>
+            <option name="name" value="富国">富国</option>
+            <option name="name" value="国海富兰克林">国海富兰克林</option>
+            <option name="name" value="国泰元鑫">国泰元鑫</option>
+            <option name="name" value="鹏华">鹏华</option>
+
+            <input type="submit" value="提交"/>
+
+
+        </select>
+        </form>
+        <iframe id="id_iframe" name="nm_iframe" style="display:none;"></iframe>
+        <a href="{% url 'weixintest:warn' id %}">点击报警</a>
+
+
+    </div>
+
+</body>
+</html>

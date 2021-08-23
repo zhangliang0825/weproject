@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "签到结果",
+    "usingComponents": {
+        "custom-wrapper": "../../../custom-wrapper",
+        "comp": "../../../comp"
+    }
+}

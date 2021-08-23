@@ -1,0 +1,638 @@
+.vip {
+    background-color: #fff;
+    padding-top: 40rpx;
+    min-height: 100%;
+    padding-bottom: 160rpx;
+}
+
+.pay-info,.vip .vip-evaluate {
+    width: 100%;
+}
+
+.pay-info {
+    margin-bottom: 40rpx;
+}
+
+.card,.pay-info>.price {
+    height: 320rpx;
+    position: relative;
+}
+
+.pay-info>.price>.img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.pay-info .label {
+    color: #a5875e;
+    position: relative;
+    padding-top: 190rpx;
+    padding-left: 36rpx;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.pay-info .label>.amount {
+    position: relative;
+    background-image: -webkit-gradient(linear,right top,left top,from(#ffc572),to(#e39a51));
+    background-image: -webkit-linear-gradient(right,#ffc572,#e39a51);
+    background-image: -o-linear-gradient(right,#ffc572,#e39a51);
+    background-image: linear-gradient(right,#ffc572,#e39a51);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 76rpx;
+    line-height: 1;
+}
+
+.pay-info .label>.amount>.unit {
+    font-size: 48rpx;
+    margin-left: 10rpx;
+}
+
+.pay-info .label>.origin {
+    font-size: 32rpx;
+    font-weight: 700;
+    line-height: 1;
+    color: #a5875e;
+    position: relative;
+    text-decoration: line-through;
+    bottom: 0;
+    padding-left: 20rpx;
+    padding-top: 36rpx;
+}
+
+.pay-info>.discounts,.pay-info>.discounts>.option {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.pay-info>.discounts {
+    height: 140rpx;
+    background-color: #a5875e;
+    font-size: 32rpx;
+    color: #fff;
+    flex-direction: column;
+    padding-left: 100rpx;
+    position: relative;
+}
+
+.pay-info>.discounts>.option {
+    background-color: #fff;
+    width: 40rpx;
+    height: 40rpx;
+    position: absolute;
+    left: 40rpx;
+    top: 36rpx;
+    border-radius: 5rpx;
+    color: #a5875e;
+    text-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.pay-info>.discounts>.option>.icomoon {
+    font-size: 24rpx;
+    margin-top: 4rpx;
+}
+
+.pay-info>.discounts .discount-price {
+    font-weight: 700;
+}
+
+.pay-info>.discounts>.expired {
+    font-size: 24rpx;
+    color: #d2c3ae;
+}
+
+.card {
+    width: 100%;
+}
+
+.card .cardBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.card .userInfo {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    z-index: 11;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 56rpx;
+}
+
+.card .userInfo .avatarBox {
+    width: 80rpx;
+    height: 80rpx;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 13rpx;
+}
+
+.card .userInfo .avatarBox .avatar {
+    width: 70rpx;
+    height: 70rpx;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.card .userInfo .label {
+    flex: 1;
+}
+
+.card .association-entrance-box,.card .userInfo .label .lebelName {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.card .userInfo .label .lebelName {
+    font-weight: 700;
+    font-size: 32rpx;
+    color: #d8d8d8;
+    margin-bottom: 20rpx;
+    flex-direction: row;
+    line-height: 1;
+}
+
+.card .userInfo .label .lebelName .icomoon {
+    font-size: 30rpx;
+    color: #6d665d;
+    margin-left: 10rpx;
+}
+
+.card .userInfo .label .lebelExpired {
+    line-height: 1;
+    font-size: 24rpx;
+    color: #82796b;
+}
+
+.card .association-entrance-box {
+    background-image: -webkit-gradient(linear,left top,right top,from(#ffc572),to(#e39a51));
+    background-image: -webkit-linear-gradient(left,#ffc572,#e39a51);
+    background-image: -o-linear-gradient(left,#ffc572 0,#e39a51 100%);
+    background-image: linear-gradient(90deg,#ffc572,#e39a51);
+    border-radius: 24rpx 0 0 24rpx;
+    padding: 2rpx 16rpx;
+    position: absolute;
+    top: 40rpx;
+    right: 0;
+    z-index: 11;
+}
+
+.card .association-entrance-box .icomoon {
+    font-size: 28rpx;
+    color: #1b1b1a;
+    margin-right: 8rpx;
+}
+
+.card .association-entrance-box .entrance-value {
+    font-family: PingFangSC-Medium;
+    font-size: 24rpx;
+    color: #1b1b1a;
+    letter-spacing: 0;
+}
+
+.card.active .userInfo .label .lebelExpired,.card.active .userInfo .label .lebelName,.card.active .userInfo .label .lebelName .icomoon {
+    color: #e39a51;
+}
+
+.lottery-entrance {
+    display: block;
+    width: calc(100% - 80rpx);
+    margin: 32rpx auto 0;
+}
+
+.vipDuration {
+    padding: 32rpx 40rpx 0;
+}
+
+.vipDuration .vTitle {
+    font-size: 24rpx;
+    color: #464750;
+    margin-bottom: 32rpx;
+}
+
+.vipDuration .vClass,.vipDuration .vClass .classItem {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.vipDuration .vClass {
+    width: 100%;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.vipDuration .vClass .classItem {
+    flex: 0 0 30.14%;
+    background: #fff;
+    border: 2rpx solid #fff;
+    box-shadow: 0 0 24rpx 0 rgba(0,0,0,.1);
+    padding: 40rpx 0 32rpx;
+    border-radius: 8rpx;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+    transition: all .2s ease-in-out;
+}
+
+.vipDuration .vClass .classItem .date,.vipDuration .vClass .classItem .price {
+    line-height: 1;
+    font-weight: 700;
+    font-size: 28rpx;
+    color: #464750;
+}
+
+.vipDuration .vClass .classItem .price {
+    color: #ce9e5b;
+    margin: 15rpx 0;
+}
+
+.vipDuration .vClass .classItem .price .number {
+    font-weight: 700;
+    font-size: 62rpx;
+    color: #ce9e5b;
+}
+
+.vipDuration .vClass .classItem .oldPrice {
+    line-height: 1;
+    font-size: 24rpx;
+    color: #b6b9c3;
+    position: relative;
+}
+
+.vipDuration .vClass .classItem .oldPrice .line {
+    width: 100%;
+    height: 2rpx;
+    background-color: #b6b9c3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+.vipDuration .discountMessage,.vipDuration .vClass .classItem .price-hint {
+    background-image: linear-gradient(135deg,#fc8a62,#e05e5e);
+}
+
+.vipDuration .vClass .classItem .price-hint {
+    line-height: 1;
+    font-size: 20rpx;
+    color: #fff;
+    padding: 8rpx 12rpx;
+    border-radius: 10rpx 0 10rpx 0;
+    position: absolute;
+    left: -2rpx;
+    top: -20rpx;
+}
+
+.vipDuration .vClass .classItem.active {
+    background: rgba(249,135,98,.06);
+    border: 2rpx solid #f98762;
+}
+
+.vipDuration .vClass .classItem.active .date,.vipDuration .vClass .classItem.active .oldPrice,.vipDuration .vClass .classItem.active .price,.vipDuration .vClass .classItem.active .price .number {
+    color: #f98762;
+}
+
+.vipDuration .vClass .classItem.active .oldPrice .line {
+    background-color: #f98762;
+}
+
+.vipDuration .discountMessage {
+    border-radius: 8rpx;
+    padding: 40rpx;
+    margin-top: 32rpx;
+}
+
+.vipDuration .discountMessage .row1,.vipDuration .discountMessage .row1 .option {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.vipDuration .discountMessage .row1 {
+    margin-bottom: 2rpx;
+    flex-direction: row;
+}
+
+.vipDuration .discountMessage .row1 .option {
+    background-color: #fff;
+    width: 40rpx;
+    height: 40rpx;
+    left: 40rpx;
+    top: 36rpx;
+    border-radius: 5rpx;
+    color: #a5875e;
+    text-align: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-right: 20rpx;
+}
+
+.vipDuration .discountMessage .row1 .option>.icomoon {
+    color: #e3635f;
+    font-size: 24rpx;
+    margin-top: 4rpx;
+}
+
+.vipDuration .discountMessage .row1 .discountPrice {
+    font-size: 32rpx;
+    color: #fff;
+}
+
+.vipDuration .discountMessage .row2 {
+    padding-left: 60rpx;
+    opacity: .5;
+    font-size: 24rpx;
+    color: #fff;
+}
+
+.purchase-tip-box .tip-swiper .tip-item,.vipDuration .newPayButton {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.vipDuration .newPayButton {
+    height: 88rpx;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 28rpx;
+    font-weight: 700;
+    color: #fff;
+    background-image: -webkit-gradient(linear,left top,right top,from(#dbb071),to(#c18f5d));
+    background-image: -webkit-linear-gradient(left,#dbb071,#c18f5d);
+    background-image: -o-linear-gradient(left,#dbb071 0,#c18f5d 100%);
+    background-image: linear-gradient(90deg,#dbb071,#c18f5d);
+    border-radius: 44rpx;
+    margin-top: 32rpx;
+}
+
+.purchase-tip-box {
+    width: calc(100% - 64rpx);
+    height: 72rpx;
+    box-sizing: border-box;
+    padding: 10rpx 24rpx;
+    border-radius: 6rpx;
+    margin: 32rpx 32rpx 0;
+    background: #eff0f2;
+}
+
+.purchase-tip-box .tip-swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.purchase-tip-box .tip-swiper .tip-item {
+    height: 100%;
+    flex-direction: row;
+}
+
+.purchase-tip-box .tip-swiper .tip-item .item-avater {
+    width: 32rpx;
+    height: 32rpx;
+    border-radius: 50%;
+    margin-right: 8rpx;
+}
+
+.purchase-tip-box .tip-swiper .tip-item .item-value {
+    font-size: 24rpx;
+    color: #464750;
+    letter-spacing: 0.36rpx;
+    line-height: 1;
+}
+
+.purchase-tip-box .tip-swiper .tip-item .item-value .count {
+    color: #ec5869;
+}
+
+.section {
+    margin-top: 80rpx;
+    padding: 0 40rpx;
+}
+
+.section>.title {
+    font-size: 40rpx;
+    line-height: 40rpx;
+    margin-bottom: 40rpx;
+    font-weight: 700;
+}
+
+.section .special {
+    margin-top: 20rpx;
+}
+
+.section>.content {
+    color: #464750;
+    font-size: 28rpx;
+    line-height: 1.5;
+}
+
+.section .vip-ios-handleBook-list {
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.section .vip-ios-handleBook-list .list-des {
+    font-size: 24rpx;
+    color: #464750;
+    letter-spacing: 0;
+    line-height: 44rpx;
+}
+
+.section.special {
+    padding: 0;
+}
+
+.section.special .title {
+    padding-left: 40rpx;
+}
+
+.table>.vip-row,.table>.vip-row>.vip-cell {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.table>.vip-row {
+    height: 80rpx;
+}
+
+.table>.vip-row>.vip-cell {
+    flex: 1;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 24rpx;
+    color: #7b7e8e;
+}
+
+.table>.vip-row>.vip-cell:first-child {
+    font-weight: 700;
+    color: #464750;
+}
+
+.table>.vip-row:nth-child(2n) {
+    background-color: #eff0f2;
+}
+
+.table>.vip-row:nth-child(2n+1) {
+    background-color: #fff;
+}
+
+.table>.vip-row:first-child {
+    background-color: #464750;
+}
+
+.table>.vip-row:first-child>.vip-cell {
+    color: #fff;
+    font-size: 28rpx;
+    font-weight: 700;
+}
+
+.table>.vip-row:first-child>.vip-cell:last-child {
+    color: #e6c393;
+}
+
+.inviterButton {
+    display: block;
+    width: 670rpx;
+    height: 180rpx;
+    margin: 30rpx auto 0;
+}
+
+.pay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 88rpx;
+    background: -webkit-gradient(linear,left top,right top,from(#dbb071),to(#c18f5d));
+    background: -webkit-linear-gradient(left,#dbb071,#c18f5d);
+    background: -o-linear-gradient(left,#dbb071 0,#c18f5d 100%);
+    background: linear-gradient(90deg,#dbb071,#c18f5d);
+    font-size: 28rpx;
+    color: #fff;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.pay.-iphonex {
+    padding-bottom: 68rpx;
+    background-color: #fff;
+    height: 156rpx;
+}
+
+.vip-ios-box {
+    padding: 32rpx 40rpx 0;
+}
+
+.vip-ios-box .box-title {
+    font-size: 24rpx;
+    color: #464750;
+    letter-spacing: 0;
+    line-height: 40rpx;
+    margin-bottom: 32rpx;
+}
+
+.vip-ios-box .box-jpg {
+    width: 100%;
+    border-radius: 8rpx;
+}
+
+.vip-ios-handleBook {
+    width: 100%;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+.buttons {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 80;
+    flex-direction: row;
+}
+
+.buttons.-iphonex {
+    padding-bottom: 68rpx;
+    background-color: #fff;
+    height: 156rpx;
+}
+
+.buttons,.buttons>.button {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.buttons>.button {
+    height: 88rpx;
+    color: #fff;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 28rpx;
+    font-weight: 700;
+}
+
+.buttons .contact {
+    flex: 1;
+    background: #2a5f9f;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    border-radius: 0;
+}
+
+.buttons .contact:after {
+    display: none;
+}
+
+.buttons .ios-buy {
+    flex: 2;
+    background: #a5875e;
+}
+
+.buttons .ios-buy .pay-number {
+    font-size: 32rpx;
+    margin: -1rpx 10rpx 0;
+}

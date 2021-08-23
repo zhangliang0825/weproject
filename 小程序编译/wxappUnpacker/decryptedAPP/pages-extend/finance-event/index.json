@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "事件",
+    "usingComponents": {
+        "custom-wrapper": "../../custom-wrapper",
+        "comp": "../../comp"
+    }
+}

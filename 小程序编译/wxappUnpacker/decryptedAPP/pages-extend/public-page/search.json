@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "搜索",
+    "usingComponents": {
+        "custom-wrapper": "../../custom-wrapper",
+        "comp": "../../comp"
+    }
+}

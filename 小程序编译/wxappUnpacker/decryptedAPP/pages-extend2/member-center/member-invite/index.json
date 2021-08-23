@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "我的邀请",
+    "usingComponents": {
+        "custom-wrapper": "../../../custom-wrapper",
+        "comp": "../../../comp"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "全国批发市场信息",
+    "usingComponents": {
+        "custom-wrapper": "../../custom-wrapper",
+        "comp": "../../comp"
+    }
+}

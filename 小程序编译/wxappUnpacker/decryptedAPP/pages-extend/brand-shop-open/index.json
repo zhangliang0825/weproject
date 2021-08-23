@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "门店开店详情",
+    "usingComponents": {
+        "custom-wrapper": "../../custom-wrapper",
+        "comp": "../../comp"
+    }
+}

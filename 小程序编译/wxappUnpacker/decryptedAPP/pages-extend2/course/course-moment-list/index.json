@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "课程瞬间",
+    "usingComponents": {
+        "custom-wrapper": "../../../custom-wrapper",
+        "comp": "../../../comp"
+    }
+}

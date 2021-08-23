@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "对接会报名",
+    "usingComponents": {
+        "custom-wrapper": "../../custom-wrapper",
+        "comp": "../../comp"
+    }
+}

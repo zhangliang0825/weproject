@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "窄门对接会会员权益",
+    "usingComponents": {
+        "custom-wrapper": "../../custom-wrapper",
+        "comp": "../../comp"
+    }
+}

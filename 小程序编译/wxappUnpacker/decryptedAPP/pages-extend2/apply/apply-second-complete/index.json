@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "补充收集表",
+    "usingComponents": {
+        "custom-wrapper": "../../../custom-wrapper",
+        "comp": "../../../comp"
+    }
+}

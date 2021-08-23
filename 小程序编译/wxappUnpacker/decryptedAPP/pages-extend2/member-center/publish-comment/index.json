@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "评价课程",
+    "usingComponents": {
+        "custom-wrapper": "../../../custom-wrapper",
+        "comp": "../../../comp"
+    }
+}

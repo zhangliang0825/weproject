@@ -1,0 +1,104 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>微信数据推送报警</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<style> .divcss5{ border:1px width:100px; height:200px} </style>
+
+
+<div style="margin-top:30px">
+    该新闻是否入库:
+    <form action="">
+       &nbsp是
+
+        <input type="radio"  name="rk" value="是" >
+        &nbsp否
+        <input type="radio" name="rk" value="否" >
+        &nbsp<input type="submit" value="是否入库">
+       <br>
+     {% if ruku == '是'%}
+        &nbsp入库成功
+        {%endif%}
+    </form>
+    <br>
+    微信号是否入库：
+        <form action="" >
+            biz:
+            &nbsp&nbsp&nbsp&nbsp&nbsp<input  style="width:190px" type="text" name="biz" value="{{biz}}">
+            <br>
+            微信号:
+            <input  style="width:190px" type="text" name="firstname" value="{{media}}">
+            <br>
+            媒体类型:
+            0
+            <input type="radio"  name="num" value="0" >
+            1
+            <input type="radio" name="num" value="1" >
+            2
+            <input type="radio" name="num" value="2" />
+            3
+            <input type="radio" name="num" value="3" />
+            &nbsp&nbsp<input type="submit" value="入库">
+            <br>
+            {% if firstname %}
+            数据提交成功
+            {%endif%}
+</form>
+    <br>
+
+    <form action="">
+        &nbsp<select name="name">
+            <option name="name" value="长信">长信</option>
+            <option name="name" value="富安达">富安达</option>
+            <option name="name" value="中邮">中邮</option>
+            <option name="name" value="兴全">兴全</option>
+            <option name="name" value="中欧">中欧</option>
+            <option name="name" value="嘉实">嘉实</option>
+            <option name="name" value="建信">建信</option>
+            <option name="name" value="农银汇理">农银汇理</option>
+            <option name="name" value="国寿安保">国寿安保</option>
+            <option name="name" value="新华">新华</option>
+            <option name="name" value="银华">银华</option>
+            <option name="name" value="富国">富国</option>
+            <option name="name" value="国海富兰克林">国海富兰克林</option>
+            <option name="name" value="国泰元鑫">国泰元鑫</option>
+            <option name="name" value="鹏华">鹏华</option>
+        &nbsp&nbsp<input type="submit"  value="报警"/>
+            <br>
+            {%if name%}
+            <a href="http://www.zhangyupai.net/index.php?r=hisinfo/wxnotify&id={{risk_id}}">点击报警</a>
+            {%endif%}
+
+        </select>
+        </form>
+
+
+      <div class="card-header "  style=" text-align:center">
+        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+          <h5>点击查看全文</h5>
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse">
+        <div class="card-body" style="">
+
+            {% autoescape off%}
+
+            {{htmls}}
+
+            {%endautoescape%}
+  </div>
+            </div>
+</div>
+</body>
+</html>
+

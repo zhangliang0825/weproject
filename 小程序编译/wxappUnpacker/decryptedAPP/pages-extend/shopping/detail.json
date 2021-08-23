@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "购物中心详情",
+    "usingComponents": {
+        "custom-wrapper": "../../custom-wrapper",
+        "comp": "../../comp"
+    }
+}

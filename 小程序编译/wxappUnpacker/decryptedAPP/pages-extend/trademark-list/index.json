@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "商标信息",
+    "usingComponents": {
+        "custom-wrapper": "../../custom-wrapper",
+        "comp": "../../comp"
+    }
+}

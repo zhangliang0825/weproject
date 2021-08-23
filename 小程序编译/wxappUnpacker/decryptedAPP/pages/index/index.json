@@ -1,0 +1,10 @@
+{
+    "navigationBarTitleText": "窄门餐眼",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark",
+    "navigationStyle": "custom",
+    "usingComponents": {
+        "custom-wrapper": "../../custom-wrapper",
+        "comp": "../../comp"
+    }
+}

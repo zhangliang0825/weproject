@@ -1,0 +1,222 @@
+2021-08-16 10:06:12.803 | ERROR    | post_api:insert_data:29 - An error has been caught in function 'insert_data', process 'MainProcess' (15252), thread 'MainThread' (6944):
+Traceback (most recent call last):
+
+  File "D:\Python39\lib\site-packages\selenium\webdriver\common\service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+    │              │          │     │        │    └ environ({'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\39098\\AppData\\Roaming', 'COMMONPROGRAMFILES': 'C:\\Pr...
+    │              │          │     │        └ <selenium.webdriver.phantomjs.service.Service object at 0x000002663A454730>
+    │              │          │     └ ['phantomjs', '--cookies-file=C:\\Users\\39098\\AppData\\Local\\Temp\\tmp2ez647fo', '--webdriver=63100']
+    │              │          └ <class 'subprocess.Popen'>
+    │              └ <module 'subprocess' from 'D:\\Python39\\lib\\subprocess.py'>
+    └ <selenium.webdriver.phantomjs.service.Service object at 0x000002663A454730>
+
+  File "D:\Python39\lib\subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    │    │              │     │           │           └ False
+    │    │              │     │           └ None
+    │    │              │     └ None
+    │    │              └ ['phantomjs', '--cookies-file=C:\\Users\\39098\\AppData\\Local\\Temp\\tmp2ez647fo', '--webdriver=63100']
+    │    └ <function Popen._execute_child at 0x00000266391DE040>
+    └ <Popen: returncode: None args: ['phantomjs', '--cookies-file=C:\\Users\\3909...>
+
+  File "D:\Python39\lib\subprocess.py", line 1420, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       │       │             │           └ 'phantomjs --cookies-file=C:\\Users\\39098\\AppData\\Local\\Temp\\tmp2ez647fo --webdriver=63100'
+                       │       │             └ None
+                       │       └ <built-in function CreateProcess>
+                       └ <module '_winapi' (built-in)>
+
+FileNotFoundError: [WinError 2] 系统找不到指定的文件。
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "D:\代码脚本\项目程序\文件上传\post_api.py", line 83, in <module>
+    uvicorn.run(app='post_api:app', host="127.0.0.1", port=8080)
+    │       └ <function run at 0x000002663A3899D0>
+    └ <module 'uvicorn' from 'D:\\Python39\\lib\\site-packages\\uvicorn\\__init__.py'>
+
+  File "D:\Python39\lib\site-packages\uvicorn\main.py", line 447, in run
+    server.run()
+    │      └ <function Server.run at 0x000002663A389430>
+    └ <uvicorn.server.Server object at 0x000002663A3A7C70>
+
+  File "D:\Python39\lib\site-packages\uvicorn\server.py", line 68, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           │       │   │    │             └ None
+           │       │   │    └ <function Server.serve at 0x000002663A3894C0>
+           │       │   └ <uvicorn.server.Server object at 0x000002663A3A7C70>
+           │       └ <function run at 0x0000026639122C10>
+           └ <module 'asyncio' from 'D:\\Python39\\lib\\asyncio\\__init__.py'>
+
+  File "D:\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+           │    │                  └ <coroutine object Server.serve at 0x000002663A3933C0>
+           │    └ <function BaseEventLoop.run_until_complete at 0x00000266392513A0>
+           └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+
+  File "D:\Python39\lib\asyncio\base_events.py", line 629, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x0000026639251310>
+    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+
+  File "D:\Python39\lib\asyncio\base_events.py", line 596, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x0000026639253E50>
+    └ <_WindowsSelectorEventLoop running=True closed=False debug=False>
+
+  File "D:\Python39\lib\asyncio\base_events.py", line 1890, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x00000266391E4AF0>
+    └ <Handle <TaskStepMethWrapper object at 0x000002663A430B20>()>
+
+  File "D:\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <TaskStepMethWrapper object at 0x000002663A430B20>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <TaskStepMethWrapper object at 0x000002663A430B20>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <TaskStepMethWrapper object at 0x000002663A430B20>()>
+
+  File "D:\Python39\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+                   │   │    │      │    │        │    └ <function RequestResponseCycle.send at 0x000002663A41CAF0>
+                   │   │    │      │    │        └ <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000002663A430AF0>
+                   │   │    │      │    └ <function RequestResponseCycle.receive at 0x000002663A41CB80>
+                   │   │    │      └ <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000002663A430AF0>
+                   │   │    └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.1'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8080), 'cl...
+                   │   └ <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000002663A430AF0>
+                   └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x000002663A3EE0A0>
+
+  File "D:\Python39\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+                 │    │   │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000002663A430AF0>>
+                 │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000002663A430...
+                 │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.1'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8080), 'cl...
+                 │    └ <fastapi.applications.FastAPI object at 0x000002663A42B040>
+                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x000002663A3EE0A0>
+
+  File "D:\Python39\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+                           │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000002663A430AF0>>
+                           │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000002663A430...
+                           └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.1'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8080), 'cl...
+
+  File "D:\Python39\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000002663A430AF0>>
+          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000002663A430...
+          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.1'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8080), 'cl...
+          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x000002663A42B250>
+          └ <fastapi.applications.FastAPI object at 0x000002663A42B040>
+
+  File "D:\Python39\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x000002663A424CA0>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000002663A430...
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.1'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8080), 'cl...
+          │    └ <starlette.exceptions.ExceptionMiddleware object at 0x000002663A42B220>
+          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x000002663A42B250>
+
+  File "D:\Python39\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+          │    │   │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x000002663A424D30>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000002663A430...
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.1'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8080), 'cl...
+          │    └ <fastapi.routing.APIRouter object at 0x000002663A42B0A0>
+          └ <starlette.exceptions.ExceptionMiddleware object at 0x000002663A42B220>
+
+  File "D:\Python39\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+          │     │      │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x000002663A424D30>
+          │     │      │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000002663A430...
+          │     │      └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.1'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8080), 'cl...
+          │     └ <function Route.handle at 0x0000026639C43700>
+          └ <fastapi.routing.APIRoute object at 0x000002663A42BA30>
+
+  File "D:\Python39\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x000002663A424D30>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x000002663A430...
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.1'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8080), 'cl...
+          │    └ <function request_response.<locals>.app at 0x000002663A424820>
+          └ <fastapi.routing.APIRoute object at 0x000002663A42BA30>
+
+  File "D:\Python39\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+                     │    └ <starlette.requests.Request object at 0x000002663A430820>
+                     └ <function get_request_handler.<locals>.app at 0x000002663A424790>
+
+  File "D:\Python39\lib\site-packages\fastapi\routing.py", line 219, in app
+    raw_response = await run_endpoint_function(
+                         └ <function run_endpoint_function at 0x0000026639C2E790>
+
+  File "D:\Python39\lib\site-packages\fastapi\routing.py", line 152, in run_endpoint_function
+    return await dependant.call(**values)
+                 │         │      └ {'item_id': 79374, 'pdf': 'indexv3.php'}
+                 │         └ <function insert_data at 0x000002663A424700>
+                 └ <fastapi.dependencies.models.Dependant object at 0x000002663A42BA00>
+
+> File "D:\代码脚本\项目程序\文件上传\post_api.py", line 29, in insert_data
+    result = get_content(id_,cur3,pdf_url)
+             │           │   │    └ 'indexv3.php'
+             │           │   └ <pymysql.cursors.Cursor object at 0x000002663A430C10>
+             │           └ 79374
+             └ <function get_content at 0x000002663A233AF0>
+
+  File "D:\代码脚本\项目程序\文件上传\weeklipdf_post.py", line 142, in get_content
+    result = format_web(f.url,save_name)
+             │          │ │   └ '20210816ribaogtyx'
+             │          │ └ <property object at 0x0000026639EF4C20>
+             │          └ furl('http://www.zhangyupai.net/mobile/indexv3.php?key1=%E5%9B%BD%E6%B3%B0%E5%85%83%E9%91%AB&print=1&str_date=20210816')
+             └ <function format_web at 0x0000026639CD2430>
+
+  File "D:\代码脚本\项目程序\文件上传\PDF.py", line 11, in format_web
+    driver = webdriver.PhantomJS('phantomjs')
+             │         └ <class 'selenium.webdriver.phantomjs.webdriver.WebDriver'>
+             └ <module 'selenium.webdriver' from 'D:\\Python39\\lib\\site-packages\\selenium\\webdriver\\__init__.py'>
+
+  File "D:\Python39\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py", line 56, in __init__
+    self.service.start()
+    │    │       └ <function Service.start at 0x0000026639FE4280>
+    │    └ <selenium.webdriver.phantomjs.service.Service object at 0x000002663A454730>
+    └ <unprintable WebDriver object>
+
+  File "D:\Python39\lib\site-packages\selenium\webdriver\common\service.py", line 81, in start
+    raise WebDriverException(
+          └ <class 'selenium.common.exceptions.WebDriverException'>
+
+selenium.common.exceptions.WebDriverException: Message: 'phantomjs' executable needs to be in PATH. 
+
+2021-08-16 10:07:06.971 | DEBUG    | weeklipdf_post:get_content:155 - {"filename":"20210816ribaogtyx.pdf","token":"{\"path\":\"/var/www/html/jijin/upload/gtyx/\",\"name\":\"20210816国泰元鑫资产每日报告\"}","code":1}
+2021-08-16 10:15:45.992 | DEBUG    | weeklipdf_post:get_content:155 - {"filename":"20210816ribaopenghua.pdf","token":"{\"path\":\"/var/www/html/jijin/upload/penghua/\",\"name\":\"20210816鹏华基金每日报告\"}","code":1}
+2021-08-16 10:18:24.350 | DEBUG    | weeklipdf_post:get_content:155 - {"filename":"20210816ribaoguohai.pdf","token":"{\"path\":\"/var/www/html/jijin/upload/guohai/\",\"name\":\"20210816国海富兰克林基金每日报告\"}","code":1}
+2021-08-16 10:19:26.942 | DEBUG    | weeklipdf_post:get_content:155 - {"filename":"20210816ribaogtyx.pdf","token":"{\"path\":\"/var/www/html/jijin/upload/gtyx/\",\"name\":\"20210816国泰元鑫资产每日报告\"}","code":1}
+2021-08-16 10:19:46.760 | DEBUG    | weeklipdf_post:get_content:155 - {"filename":"20210816ribaohuaan.pdf","token":"{\"path\":\"/var/www/html/jijin/upload/huaan/\",\"name\":\"20210816华安基金每日报告\"}","code":1}
+2021-08-16 10:20:05.117 | DEBUG    | weeklipdf_post:get_content:155 - {"filename":"20210816ribaofuanda.pdf","token":"{\"path\":\"/var/www/html/jijin/upload/fuanda/\",\"name\":\"20210816富安达基金每日报告\"}","code":1}
+2021-08-16 10:20:30.424 | DEBUG    | weeklipdf_post:get_content:155 - {"filename":"20210816ribaodzzg.pdf","token":"{\"path\":\"/var/www/html/jijin/upload/dzzg/\",\"name\":\"20210816东方红资产管理每日报告\"}","code":1}
+2021-08-16 10:20:53.222 | DEBUG    | weeklipdf_post:get_content:155 - {"filename":"20210816ribaozhongou.pdf","token":"{\"path\":\"/var/www/html/jijin/upload/zhongou/\",\"name\":\"20210816中欧基金每日报告\"}","code":1}
+2021-08-16 10:21:24.313 | DEBUG    | weeklipdf_post:get_content:155 - {"filename":"20210816ribaochangxin.pdf","token":"{\"path\":\"/var/www/html/jijin/upload/changxin/\",\"name\":\"20210816长信基金每日报告\"}","code":1}
+2021-08-16 10:21:47.914 | DEBUG    | weeklipdf_post:get_content:155 - {"filename":"20210816ribaotianhong.pdf","token":"{\"path\":\"/var/www/html/jijin/upload/tianhong/\",\"name\":\"20210816天弘基金每日报告\"}","code":1}
+2021-08-16 10:22:09.218 | DEBUG    | weeklipdf_post:get_content:155 - {"filename":"20210816ribaozhongyou.pdf","token":"{\"path\":\"/var/www/html/jijin/upload/zhongyou/\",\"name\":\"20210816中邮基金每日报告\"}","code":1}
+2021-08-16 10:23:15.441 | DEBUG    | weeklipdf_post:get_content:155 - {"filename":"20210816ribaoxinquan.pdf","token":"{\"path\":\"/var/www/html/jijin/upload/xinquan/\",\"name\":\"20210816兴证全球基金每日报告\"}","code":1}
+2021-08-16 10:23:40.792 | DEBUG    | weeklipdf_post:get_content:155 - {"filename":"20210816ribaoboshi.pdf","token":"{\"path\":\"/var/www/html/jijin/upload/boshi/\",\"name\":\"20210816博时基金每日报告\"}","code":1}
+2021-08-16 10:25:52.542 | DEBUG    | weeklipdf_post:get_content:155 - {"filename":"20210816ribaozxbc.pdf","token":"{\"path\":\"/var/www/html/jijin/upload/zxbc/\",\"name\":\"20210816中信保诚基金每日报告\"}","code":1}
+2021-08-16 10:26:15.592 | DEBUG    | weeklipdf_post:get_content:155 - {"filename":"20210813ribaogyzc.pdf","token":"{\"path\":\"/var/www/html/jijin/upload/gyzc/\",\"name\":\"20210813高毅资产舆情日报\"}","code":1}
+2021-08-16 10:26:40.695 | DEBUG    | weeklipdf_post:get_content:155 - {"filename":"20210816ribaofullgoal.pdf","token":"{\"path\":\"/var/www/html/jijin/upload/fullgoal/\",\"name\":\"20210816富国基金每日报告\"}","code":1}
+2021-08-16 10:27:01.603 | DEBUG    | weeklipdf_post:get_content:155 - {"filename":"20210816ribaojiaoyin.pdf","token":"{\"path\":\"/var/www/html/jijin/upload/jiaoyin/\",\"name\":\"20210816交银基金每日报告\"}","code":1}
+2021-08-16 10:37:53.847 | DEBUG    | weeklipdf_post:get_content:155 - {"filename":"20210816ribaopingan.pdf","token":"{\"path\":\"/var/www/html/jijin/upload/pingan/\",\"name\":\"20210816平安基金每日报告\"}","code":1}
+2021-08-16 10:39:16.616 | DEBUG    | weeklipdf_post:get_content:155 - {"filename":"20210813zhoubaopingan.pdf","token":"{\"path\":\"/var/www/html/jijin/upload/pingan/\",\"name\":\"20210813平安基金每周报告\"}","code":1}
+2021-08-16 10:43:37.001 | DEBUG    | weeklipdf_post:get_content:155 - {"filename":"20210813zhoubaoxinhua.pdf","token":"{\"path\":\"/var/www/html/jijin/upload/xinhua/\",\"name\":\"20210813新华基金每周报告\"}","code":1}
+2021-08-16 13:59:15.372 | DEBUG    | weeklipdf_post:get_content:155 - {"filename":"20210816ribaohtzg.pdf","token":"{\"path\":\"/var/www/html/jijin/upload/htzg/\",\"name\":\"20210816海通资管基金每日报告\"}","code":1}
+2021-08-16 14:32:38.801 | DEBUG    | weeklipdf_post:get_content:155 - {"filename":"20210816ribaogyzc.pdf","token":"{\"path\":\"/var/www/html/jijin/upload/gyzc/\",\"name\":\"20210816高毅资产每日报告\"}","code":1}
+2021-08-16 14:32:58.229 | DEBUG    | weeklipdf_post:get_content:155 - {"filename":"20210816ribaogyzc.pdf","token":"{\"path\":\"/var/www/html/jijin/upload/gyzc/\",\"name\":\"20210816高毅资产舆情日报\"}","code":1}
+2021-08-16 15:30:14.358 | DEBUG    | weeklipdf_post:get_content:155 - {"filename":"20210816ribaotianhong.pdf","token":"{\"path\":\"/var/www/html/jijin/upload/tianhong/\",\"name\":\"20210816天弘基金合规风险动态简报\"}","code":1}
+2021-08-16 15:30:51.409 | DEBUG    | weeklipdf_post:get_content:155 - {"filename":"20210813ribaotianhong.pdf","token":"{\"path\":\"/var/www/html/jijin/upload/tianhong/\",\"name\":\"20210813天弘基金合规风险动态简报\"}","code":1}
+2021-08-16 15:31:23.886 | DEBUG    | weeklipdf_post:get_content:155 - {"filename":"20210816ribaozhongjixie.pdf","token":"{\"path\":\"/var/www/html/jijin/upload/zhongjixie/\",\"name\":\"20210816基金规范营销每日报告\"}","code":1}
+2021-08-16 16:45:04.473 | DEBUG    | weeklipdf_post:get_content:155 - {"filename":"20210816ribaozhaoshan.pdf","token":"{\"path\":\"/var/www/html/jijin/upload/zhaoshan/\",\"name\":\"20210816招商基金每日报告\"}","code":1}
+2021-08-17 09:31:25.121 | DEBUG    | weeklipdf_post:get_content:155 - {"filename":"20210817ribaogtyx.pdf","token":"{\"path\":\"/var/www/html/jijin/upload/gtyx/\",\"name\":\"20210817国泰元鑫资产每日报告\"}","code":1}

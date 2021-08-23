@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "历史价格",
+    "usingComponents": {
+        "custom-wrapper": "../../custom-wrapper",
+        "comp": "../../comp"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "外卖数据详情",
+    "usingComponents": {
+        "custom-wrapper": "../../custom-wrapper",
+        "comp": "../../comp"
+    }
+}

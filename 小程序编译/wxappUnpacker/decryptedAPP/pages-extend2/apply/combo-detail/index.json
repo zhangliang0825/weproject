@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "套餐信息",
+    "usingComponents": {
+        "custom-wrapper": "../../../custom-wrapper",
+        "comp": "../../../comp"
+    }
+}

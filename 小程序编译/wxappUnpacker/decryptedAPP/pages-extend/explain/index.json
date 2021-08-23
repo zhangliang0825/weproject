@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "数据说明",
+    "usingComponents": {
+        "custom-wrapper": "../../custom-wrapper",
+        "comp": "../../comp"
+    }
+}

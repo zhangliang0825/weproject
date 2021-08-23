@@ -51,7 +51,7 @@ class TtSpider(scrapy.Spider):
     def start_requests(self):
         self.db = pymysql.connect(**self.db_config)
         self.cursor = self.db.cursor()#创建游标
-        sql = '''SELECT media,link,token FROM media WHERE post_type IN (1) AND link <>  "" and id >32584  AND token IS NULL'''
+        sql = '''SELECT media,link,token FROM media WHERE post_type IN (1) AND link <>  "" and id >32584 '''
         # sql = '''SELECT media,link,token FROM media WHERE post_type IN (1) AND link =  "" or link = null'''
         self.cursor.execute(sql)
         all_data_list = self.cursor.fetchall()
@@ -73,43 +73,43 @@ class TtSpider(scrapy.Spider):
 
     def parse(self, response):
 
-        # media = response.meta['media']
-        # data_json = json.loads(response.text)
-        # data_list = data_json.get("data")
-        # print(data_list)
-        # if data_list:
-        #     keyword = [i.get("id") for i in data_list if i.get("name") ==media.strip()]
-        #     if keyword:
-        #         print(keyword)
-        #         sql = 'update media set link = %s where media =%s'
-        #
-        #         self.cursor.execute(sql,(keyword[0],media))
-        #         self.db.commit()
-        #         print(sql,keyword)
-        #     else:
-        #         sql = 'delete from media where media = %s'
-        #         self.cursor.execute(sql,(media))
-        #         self.db.commit()
-        #         print(media,'删除......')
+        media = response.meta['media']
+        data_json = json.loads(response.text)
+        data_list = data_json.get("data")
+        print(data_list)
+        if data_list:
+            keyword = [i.get("id") for i in data_list if i.get("name") ==media.strip()]
+            if keyword:
+                print(keyword)
+                sql = 'update media set link = %s where media =%s'
+
+                self.cursor.execute(sql,(keyword[0],media))
+                self.db.commit()
+                print(sql,keyword)
+            else:
+                sql = 'delete from media where media = %s'
+                self.cursor.execute(sql,(media))
+                self.db.commit()
+                print(media,'删除......')
 
         ####################################################
         #
-        media_id = response.meta['media_id']
-        media = response.meta['media']
-        user_code = response.headers.getlist('Location')
-
-        user_code = user_code[0].decode('utf-8')
-        print(user_code,media_id,media)
-        if '404_not_found' not in user_code:
-            token = re.findall(r'token/(.*?)/', user_code)[0]
-            sql = 'update media set token = %s where link = %s'
-            self.cursor.execute(sql,(token,media_id))
-            self.db.commit()
-            print(token,media_id)
-        elif '404_not_found'  in user_code:
-            sql = 'delete from media where link = %s'
-            self.cursor.execute(sql,(media_id))
-            self.db.commit()
-            print(media_id,'删除..................')
-
+        # media_id = response.meta['media_id']
+        # media = response.meta['media']
+        # user_code = response.headers.getlist('Location')
+        #
+        # user_code = user_code[0].decode('utf-8')
+        # print(user_code,media_id,media)
+        # if '404_not_found' not in user_code:
+        #     token = re.findall(r'token/(.*?)/', user_code)[0]
+        #     sql = 'update media set token = %s where link = %s'
+        #     self.cursor.execute(sql,(token,media_id))
+        #     self.db.commit()
+        #     print(token,media_id)
+        # elif '404_not_found'  in user_code:
+        #     sql = 'delete from media where link = %s'
+        #     self.cursor.execute(sql,(media_id))
+        #     self.db.commit()
+        #     print(media_id,'删除..................')
+        #
 

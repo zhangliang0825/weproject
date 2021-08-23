@@ -1,0 +1,492 @@
+[2021-05-25 10:07:00,495][MainThread:19588][task_id:scrapy.utils.log][log.py:147][INFO][Scrapy 2.5.0 started (bot: paper)]
+[2021-05-25 10:07:00,496][MainThread:19588][task_id:scrapy.utils.log][log.py:153][INFO][Versions: lxml 4.1.1.0, libxml2 2.9.5, cssselect 1.0.1, parsel 1.5.2, w3lib 1.22.0, Twisted 21.2.0, Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 18:11:49) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 17.3.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Windows-10-10.0.19041-SP0]
+[2021-05-25 10:07:00,504][MainThread:19588][task_id:scrapy.crawler][crawler.py:60][INFO][Overridden settings:
+{'BOT_NAME': 'paper',
+ 'CONCURRENT_REQUESTS': 4,
+ 'DOWNLOAD_DELAY': 0.01,
+ 'DOWNLOAD_FAIL_ON_DATALOSS': False,
+ 'NEWSPIDER_MODULE': 'paper.spiders',
+ 'RETRY_TIMES': 6,
+ 'SPIDER_MODULES': ['paper.spiders']}]
+[2021-05-25 10:07:00,528][MainThread:19588][task_id:scrapy.extensions.telnet][telnet.py:55][INFO][Telnet Password: 75fc64013c486027]
+[2021-05-25 10:07:00,551][MainThread:19588][task_id:scrapy.middleware][middleware.py:48][INFO][Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']]
+[2021-05-25 10:07:00,835][MainThread:19588][task_id:scrapy.middleware][middleware.py:48][INFO][Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'paper.middlewares.Randomproxys',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']]
+[2021-05-25 10:07:00,840][MainThread:19588][task_id:scrapy.middleware][middleware.py:48][INFO][Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']]
+[2021-05-25 10:07:00,842][MainThread:19588][task_id:scrapy.middleware][middleware.py:48][INFO][Enabled item pipelines:
+['paper.pipelines.PaperPipeline2']]
+[2021-05-25 10:07:00,842][MainThread:19588][task_id:scrapy.core.engine][engine.py:272][INFO][Spider opened]
+[2021-05-25 10:07:00,852][MainThread:19588][task_id:scrapy.extensions.logstats][logstats.py:48][INFO][Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)]
+[2021-05-25 10:07:00,854][MainThread:19588][task_id:scrapy.extensions.telnet][telnet.py:69][INFO][Telnet console listening on 127.0.0.1:6023]
+[2021-05-25 10:07:02,276][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of164906,1037896087.html already exist]
+[2021-05-25 10:07:02,493][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of519772,1037926241.html already exist]
+[2021-05-25 10:07:02,656][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of010143,1037926058.html already exist]
+[2021-05-25 10:07:02,775][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of010143,1037917013.html already exist]
+[2021-05-25 10:07:02,960][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of164906,1037921875.html already exist]
+[2021-05-25 10:07:03,160][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of164906,1037899087.html already exist]
+[2021-05-25 10:07:03,355][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of519778,1037916819.html already exist]
+[2021-05-25 10:07:03,476][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of519772,1037912577.html already exist]
+[2021-05-25 10:07:03,626][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of519778,1037913525.html already exist]
+[2021-05-25 10:07:03,761][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of008507,1037906908.html already exist]
+[2021-05-25 10:07:03,852][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of519732,1037908406.html already exist]
+[2021-05-25 10:07:03,975][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of008507,1037905990.html already exist]
+[2021-05-25 10:07:04,159][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of008955,1037908161.html already exist]
+[2021-05-25 10:07:04,278][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of164906,1037871380.html already exist]
+[2021-05-25 10:07:04,920][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of005004,1037633333.html already exist]
+[2021-05-25 10:07:05,216][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of009618,1037692876.html already exist]
+[2021-05-25 10:07:05,821][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of164906,1037893871.html already exist]
+[2021-05-25 10:07:05,959][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of519736,1037786071.html already exist]
+[2021-05-25 10:07:06,142][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of010454,1037601469.html already exist]
+[2021-05-25 10:07:06,309][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of519736,1037866549.html already exist]
+[2021-05-25 10:07:06,479][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of519714,1037837491.html already exist]
+[2021-05-25 10:07:06,636][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of519736,1037890248.html already exist]
+[2021-05-25 10:07:06,831][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of010143,1037888458.html already exist]
+[2021-05-25 10:07:06,930][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of008955,1037887973.html already exist]
+[2021-05-25 10:07:07,132][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of519732,1037883911.html already exist]
+[2021-05-25 10:07:07,255][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of164906,1037866031.html already exist]
+[2021-05-25 10:07:07,405][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of164906,1037861181.html already exist]
+[2021-05-25 10:07:07,573][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of010454,1037795338.html already exist]
+[2021-05-25 10:07:07,708][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of010143,1037857743.html already exist]
+[2021-05-25 10:07:07,813][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of010143,1037857099.html already exist]
+[2021-05-25 10:07:08,155][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of519710,1037856303.html already exist]
+[2021-05-25 10:07:08,746][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of519697,1037775928.html already exist]
+[2021-05-25 10:07:09,241][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of519772,1037775664.html already exist]
+[2021-05-25 10:07:09,616][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of010094,1037847472.html already exist]
+[2021-05-25 10:07:09,774][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of164906,1037602848.html already exist]
+[2021-05-25 10:07:09,956][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of519732,1037846100.html already exist]
+[2021-05-25 10:07:10,108][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of519736,1037848324.html already exist]
+[2021-05-25 10:07:10,260][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of519772,1037848216.html already exist]
+[2021-05-25 10:07:10,474][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of519714,1037844959.html already exist]
+[2021-05-25 10:07:10,674][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of010143,1037841945.html already exist]
+[2021-05-25 10:07:10,873][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of008507,1037841396.html already exist]
+[2021-05-25 10:07:11,011][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of010143,1037841050.html already exist]
+[2021-05-25 10:07:11,155][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of519732,1037840275.html already exist]
+[2021-05-25 10:07:11,325][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of007464,1037836423.html already exist]
+[2021-05-25 10:07:11,446][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of008205,1037789847.html already exist]
+[2021-05-25 10:07:11,566][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of164908,1028082136.html already exist]
+[2021-05-25 10:07:11,732][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of008205,1036942159.html already exist]
+[2021-05-25 10:07:11,867][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of519736,1037831267.html already exist]
+[2021-05-25 10:07:12,036][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of164906,1037803636.html already exist]
+[2021-05-25 10:07:12,231][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of501092,1037826564.html already exist]
+[2021-05-25 10:07:12,384][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of010143,1037825113.html already exist]
+[2021-05-25 10:07:12,524][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of005001,1018953729.html already exist]
+[2021-05-25 10:07:12,631][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of004868,1037664045.html already exist]
+[2021-05-25 10:07:12,790][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of007465,1037815454.html already exist]
+[2021-05-25 10:07:12,915][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of164906,1037814531.html already exist]
+[2021-05-25 10:07:13,081][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of519736,1037814475.html already exist]
+[2021-05-25 10:07:13,218][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of009618,1037812352.html already exist]
+[2021-05-25 10:07:13,338][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of004075,1037812059.html already exist]
+[2021-05-25 10:07:13,506][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of519772,1037718655.html already exist]
+[2021-05-25 10:07:13,612][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of007465,1037806777.html already exist]
+[2021-05-25 10:07:13,779][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of519732,1037792284.html already exist]
+[2021-05-25 10:07:13,963][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of004075,1034792054.html already exist]
+[2021-05-25 10:07:14,123][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of004868,1037804237.html already exist]
+[2021-05-25 10:07:14,257][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of519736,1035208612.html already exist]
+[2021-05-25 10:07:14,790][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of007465,1037804079.html already exist]
+[2021-05-25 10:07:15,355][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of519736,1037803170.html already exist]
+[2021-05-25 10:07:15,624][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of519772,1037802806.html already exist]
+[2021-05-25 10:07:15,766][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of519714,1037764667.html already exist]
+[2021-05-25 10:07:15,915][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of519697,1037801156.html already exist]
+[2021-05-25 10:07:16,106][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of519772,1037734820.html already exist]
+[2021-05-25 10:07:16,283][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of519768,1037799561.html already exist]
+[2021-05-25 10:07:16,452][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of010454,1037759663.html already exist]
+[2021-05-25 10:07:16,636][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of519732,1037762535.html already exist]
+[2021-05-25 10:07:16,729][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of519772,1037799052.html already exist]
+[2021-05-25 10:07:16,866][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of519694,1037797231.html already exist]
+[2021-05-25 10:07:16,990][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of010454,1037796425.html already exist]
+[2021-05-25 10:07:17,111][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of519736,1037796262.html already exist]
+[2021-05-25 10:07:17,282][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of005004,1037090198.html already exist]
+[2021-05-25 10:07:17,388][MainThread:19588][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of519736,1037794960.html already exist]
+[2021-05-25 10:07:17,391][MainThread:19588][task_id:scrapy.core.engine][engine.py:309][INFO][Closing spider (finished)]
+[2021-05-25 10:07:17,392][MainThread:19588][task_id:scrapy.statscollectors][statscollectors.py:47][INFO][Dumping Scrapy stats:
+{'downloader/request_bytes': 532,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 13089,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 16.538396,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 5, 25, 2, 7, 17, 391114),
+ 'httpcompression/response_bytes': 64132,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 1,
+ 'log_count/INFO': 89,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2021, 5, 25, 2, 7, 0, 852718)}]
+[2021-05-25 10:07:17,392][MainThread:19588][task_id:scrapy.core.engine][engine.py:340][INFO][Spider closed (finished)]
+[2021-06-23 09:57:52,611][MainThread:5916][task_id:scrapy.utils.log][log.py:147][INFO][Scrapy 2.5.0 started (bot: paper)]
+[2021-06-23 09:57:52,612][MainThread:5916][task_id:scrapy.utils.log][log.py:153][INFO][Versions: lxml 4.1.1.0, libxml2 2.9.5, cssselect 1.0.1, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 18:11:49) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.0j  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.19041-SP0]
+[2021-06-23 09:57:52,616][MainThread:5916][task_id:scrapy.crawler][crawler.py:60][INFO][Overridden settings:
+{'BOT_NAME': 'paper',
+ 'CONCURRENT_REQUESTS': 4,
+ 'DOWNLOAD_DELAY': 0.01,
+ 'DOWNLOAD_FAIL_ON_DATALOSS': False,
+ 'NEWSPIDER_MODULE': 'paper.spiders',
+ 'RETRY_TIMES': 6,
+ 'SPIDER_MODULES': ['paper.spiders']}]
+[2021-06-23 09:57:52,647][MainThread:5916][task_id:scrapy.extensions.telnet][telnet.py:55][INFO][Telnet Password: 5c7bc74ec23d466f]
+[2021-06-23 09:57:52,678][MainThread:5916][task_id:scrapy.middleware][middleware.py:48][INFO][Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']]
+[2021-06-23 09:57:53,251][MainThread:5916][task_id:scrapy.middleware][middleware.py:48][INFO][Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'paper.middlewares.Randomproxys',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']]
+[2021-06-23 09:57:53,274][MainThread:5916][task_id:scrapy.middleware][middleware.py:48][INFO][Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']]
+[2021-06-23 09:57:53,283][MainThread:5916][task_id:scrapy.middleware][middleware.py:48][INFO][Enabled item pipelines:
+['paper.pipelines.PaperPipeline2']]
+[2021-06-23 09:57:53,284][MainThread:5916][task_id:scrapy.core.engine][engine.py:272][INFO][Spider opened]
+[2021-06-23 09:57:53,536][MainThread:5916][task_id:scrapy.extensions.logstats][logstats.py:48][INFO][Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)]
+[2021-06-23 09:57:53,539][MainThread:5916][task_id:scrapy.extensions.telnet][telnet.py:69][INFO][Telnet console listening on 127.0.0.1:6023]
+[2021-06-23 09:58:18,682][MainThread:5916][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of001938,1045721883.html already exist]
+[2021-06-23 09:58:18,863][MainThread:5916][task_id:scrapy.core.scraper][scraper.py:168][ERROR][Spider error processing <GET http://guba.eastmoney.com/news,of003096,1049292446.html> (referer: http://guba.eastmoney.com/type,zg80065113_1.html)]
+Traceback (most recent call last):
+  File "D:\Python36\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "D:\Python36\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "D:\Python36\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "D:\Python36\lib\site-packages\scrapy\core\spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "D:\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\Python36\lib\site-packages\scrapy\core\spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "D:\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\Python36\lib\site-packages\scrapy\core\spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "D:\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python36\lib\site-packages\scrapy\core\spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "D:\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python36\lib\site-packages\scrapy\core\spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "D:\代码脚本\项目程序\爬虫框架\guba\paper\spiders\spider.py", line 144, in parse2
+    logger.info(data, retention="10 days")
+  File "D:\Python36\lib\logging\__init__.py", line 1306, in info
+    self._log(INFO, msg, args, **kwargs)
+TypeError: _log() got an unexpected keyword argument 'retention'
+[2021-06-23 09:58:53,292][MainThread:18352][task_id:scrapy.utils.log][log.py:147][INFO][Scrapy 2.5.0 started (bot: paper)]
+[2021-06-23 09:58:53,293][MainThread:18352][task_id:scrapy.utils.log][log.py:153][INFO][Versions: lxml 4.1.1.0, libxml2 2.9.5, cssselect 1.0.1, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 18:11:49) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.0j  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.19041-SP0]
+[2021-06-23 09:58:53,298][MainThread:18352][task_id:scrapy.crawler][crawler.py:60][INFO][Overridden settings:
+{'BOT_NAME': 'paper',
+ 'CONCURRENT_REQUESTS': 4,
+ 'DOWNLOAD_DELAY': 0.01,
+ 'DOWNLOAD_FAIL_ON_DATALOSS': False,
+ 'NEWSPIDER_MODULE': 'paper.spiders',
+ 'RETRY_TIMES': 6,
+ 'SPIDER_MODULES': ['paper.spiders']}]
+[2021-06-23 09:58:53,316][MainThread:18352][task_id:scrapy.extensions.telnet][telnet.py:55][INFO][Telnet Password: c3ac266de7afcb5c]
+[2021-06-23 09:58:53,333][MainThread:18352][task_id:scrapy.middleware][middleware.py:48][INFO][Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']]
+[2021-06-23 09:58:53,585][MainThread:18352][task_id:scrapy.middleware][middleware.py:48][INFO][Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'paper.middlewares.Randomproxys',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']]
+[2021-06-23 09:58:53,590][MainThread:18352][task_id:scrapy.middleware][middleware.py:48][INFO][Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']]
+[2021-06-23 09:58:53,592][MainThread:18352][task_id:scrapy.middleware][middleware.py:48][INFO][Enabled item pipelines:
+['paper.pipelines.PaperPipeline2']]
+[2021-06-23 09:58:53,593][MainThread:18352][task_id:scrapy.core.engine][engine.py:272][INFO][Spider opened]
+[2021-06-23 09:58:53,602][MainThread:18352][task_id:scrapy.extensions.logstats][logstats.py:48][INFO][Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)]
+[2021-06-23 09:58:53,604][MainThread:18352][task_id:scrapy.extensions.telnet][telnet.py:69][INFO][Telnet console listening on 127.0.0.1:6023]
+[2021-06-23 09:59:18,041][MainThread:18352][task_id:scrapy.core.scraper][scraper.py:168][ERROR][Spider error processing <GET http://guba.eastmoney.com/news,of011435,1049299799.html> (referer: http://guba.eastmoney.com/type,zg80065113_1.html)]
+Traceback (most recent call last):
+  File "D:\Python36\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "D:\Python36\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "D:\Python36\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "D:\Python36\lib\site-packages\scrapy\core\spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "D:\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\Python36\lib\site-packages\scrapy\core\spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "D:\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\Python36\lib\site-packages\scrapy\core\spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "D:\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python36\lib\site-packages\scrapy\core\spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "D:\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Python36\lib\site-packages\scrapy\core\spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "D:\代码脚本\项目程序\爬虫框架\guba\paper\spiders\spider.py", line 144, in parse2
+    logger.info(data, retention="10 days")
+  File "D:\Python36\lib\logging\__init__.py", line 1306, in info
+    self._log(INFO, msg, args, **kwargs)
+TypeError: _log() got an unexpected keyword argument 'retention'
+[2021-06-23 09:59:18,177][MainThread:18352][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of001938,1045721883.html already exist]
+[2021-06-23 09:59:52,075][MainThread:17988][task_id:scrapy.utils.log][log.py:147][INFO][Scrapy 2.5.0 started (bot: paper)]
+[2021-06-23 09:59:52,076][MainThread:17988][task_id:scrapy.utils.log][log.py:153][INFO][Versions: lxml 4.1.1.0, libxml2 2.9.5, cssselect 1.0.1, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 18:11:49) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.0j  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.19041-SP0]
+[2021-06-23 09:59:52,081][MainThread:17988][task_id:scrapy.crawler][crawler.py:60][INFO][Overridden settings:
+{'BOT_NAME': 'paper',
+ 'CONCURRENT_REQUESTS': 4,
+ 'DOWNLOAD_DELAY': 0.01,
+ 'DOWNLOAD_FAIL_ON_DATALOSS': False,
+ 'NEWSPIDER_MODULE': 'paper.spiders',
+ 'RETRY_TIMES': 6,
+ 'SPIDER_MODULES': ['paper.spiders']}]
+[2021-06-23 09:59:52,100][MainThread:17988][task_id:scrapy.extensions.telnet][telnet.py:55][INFO][Telnet Password: b762ff1102467691]
+[2021-06-23 09:59:52,118][MainThread:17988][task_id:scrapy.middleware][middleware.py:48][INFO][Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']]
+[2021-06-23 09:59:52,535][MainThread:17988][task_id:scrapy.middleware][middleware.py:48][INFO][Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'paper.middlewares.Randomproxys',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']]
+[2021-06-23 09:59:52,545][MainThread:17988][task_id:scrapy.middleware][middleware.py:48][INFO][Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']]
+[2021-06-23 09:59:52,549][MainThread:17988][task_id:scrapy.middleware][middleware.py:48][INFO][Enabled item pipelines:
+['paper.pipelines.PaperPipeline2']]
+[2021-06-23 09:59:52,550][MainThread:17988][task_id:scrapy.core.engine][engine.py:272][INFO][Spider opened]
+[2021-06-23 09:59:52,571][MainThread:17988][task_id:scrapy.extensions.logstats][logstats.py:48][INFO][Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)]
+[2021-06-23 09:59:52,573][MainThread:17988][task_id:scrapy.extensions.telnet][telnet.py:69][INFO][Telnet console listening on 127.0.0.1:6023]
+[2021-06-23 10:00:30,780][MainThread:10076][task_id:scrapy.utils.log][log.py:147][INFO][Scrapy 2.5.0 started (bot: paper)]
+[2021-06-23 10:00:30,781][MainThread:10076][task_id:scrapy.utils.log][log.py:153][INFO][Versions: lxml 4.1.1.0, libxml2 2.9.5, cssselect 1.0.1, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 18:11:49) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.0j  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.19041-SP0]
+[2021-06-23 10:00:30,789][MainThread:10076][task_id:scrapy.crawler][crawler.py:60][INFO][Overridden settings:
+{'BOT_NAME': 'paper',
+ 'CONCURRENT_REQUESTS': 4,
+ 'DOWNLOAD_DELAY': 0.01,
+ 'DOWNLOAD_FAIL_ON_DATALOSS': False,
+ 'NEWSPIDER_MODULE': 'paper.spiders',
+ 'RETRY_TIMES': 6,
+ 'SPIDER_MODULES': ['paper.spiders']}]
+[2021-06-23 10:00:30,810][MainThread:10076][task_id:scrapy.extensions.telnet][telnet.py:55][INFO][Telnet Password: 6c96c5581d3a416e]
+[2021-06-23 10:00:30,833][MainThread:10076][task_id:scrapy.middleware][middleware.py:48][INFO][Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']]
+[2021-06-23 10:00:31,132][MainThread:10076][task_id:scrapy.middleware][middleware.py:48][INFO][Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'paper.middlewares.Randomproxys',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']]
+[2021-06-23 10:00:31,142][MainThread:10076][task_id:scrapy.middleware][middleware.py:48][INFO][Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']]
+[2021-06-23 10:00:31,146][MainThread:10076][task_id:scrapy.middleware][middleware.py:48][INFO][Enabled item pipelines:
+['paper.pipelines.PaperPipeline2']]
+[2021-06-23 10:00:31,147][MainThread:10076][task_id:scrapy.core.engine][engine.py:272][INFO][Spider opened]
+[2021-06-23 10:00:31,170][MainThread:10076][task_id:scrapy.extensions.logstats][logstats.py:48][INFO][Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)]
+[2021-06-23 10:00:31,172][MainThread:10076][task_id:scrapy.extensions.telnet][telnet.py:69][INFO][Telnet console listening on 127.0.0.1:6023]
+[2021-06-23 10:00:31,762][MainThread:10076][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of006229,1049301576.html already exist]
+[2021-06-23 10:00:33,538][MainThread:10076][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of001938,1045721883.html already exist]
+[2021-06-23 10:00:37,612][MainThread:10076][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of006229,1047233917.html already exist]
+[2021-06-23 10:00:39,429][MainThread:10076][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of006228,1049182874.html already exist]
+[2021-06-23 10:00:42,928][MainThread:10076][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of001811,1036175666.html already exist]
+[2021-06-23 10:00:49,022][MainThread:10076][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of011436,1045820068.html already exist]
+[2021-06-23 10:00:49,757][MainThread:10076][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of011435,1049201782.html already exist]
+[2021-06-23 10:00:51,307][MainThread:10076][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of011436,1038018402.html already exist]
+[2021-06-23 10:00:51,793][MainThread:10076][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of003096,1049076349.html already exist]
+[2021-06-23 10:00:53,399][MainThread:10076][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of001811,1049170484.html already exist]
+[2021-06-23 10:00:53,487][MainThread:10076][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of004813,1049001088.html already exist]
+[2021-06-23 10:00:53,727][MainThread:10076][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of011436,1014943335.html already exist]
+[2021-06-23 10:00:54,846][MainThread:10076][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of003095,1049184380.html already exist]
+[2021-06-23 10:00:55,839][MainThread:10076][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of002010,1046667105.html already exist]
+[2021-06-23 10:00:56,569][MainThread:10076][task_id:paper.log_config][spider.py:120][INFO][http://guba.eastmoney.com/news,of003095,1049146523.html already exist]
+[2021-06-23 10:02:01,576][MainThread:8728][task_id:scrapy.utils.log][log.py:147][INFO][Scrapy 2.5.0 started (bot: paper)]
+[2021-06-23 10:02:01,577][MainThread:8728][task_id:scrapy.utils.log][log.py:153][INFO][Versions: lxml 4.1.1.0, libxml2 2.9.5, cssselect 1.0.1, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 18:11:49) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.0j  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.19041-SP0]
+[2021-06-23 10:02:01,581][MainThread:8728][task_id:scrapy.crawler][crawler.py:60][INFO][Overridden settings:
+{'BOT_NAME': 'paper',
+ 'CONCURRENT_REQUESTS': 4,
+ 'DOWNLOAD_DELAY': 0.01,
+ 'DOWNLOAD_FAIL_ON_DATALOSS': False,
+ 'NEWSPIDER_MODULE': 'paper.spiders',
+ 'RETRY_TIMES': 6,
+ 'SPIDER_MODULES': ['paper.spiders']}]
+[2021-06-23 10:02:01,612][MainThread:8728][task_id:scrapy.extensions.telnet][telnet.py:55][INFO][Telnet Password: b0a234ed4bd4da2c]
+[2021-06-23 10:02:01,631][MainThread:8728][task_id:scrapy.middleware][middleware.py:48][INFO][Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']]
+[2021-06-23 10:02:02,166][MainThread:8728][task_id:scrapy.middleware][middleware.py:48][INFO][Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'paper.middlewares.Randomproxys',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']]
+[2021-06-23 10:02:02,182][MainThread:8728][task_id:scrapy.middleware][middleware.py:48][INFO][Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']]
+[2021-06-23 10:02:02,188][MainThread:8728][task_id:scrapy.middleware][middleware.py:48][INFO][Enabled item pipelines:
+['paper.pipelines.PaperPipeline2']]
+[2021-06-23 10:02:02,189][MainThread:8728][task_id:scrapy.core.engine][engine.py:272][INFO][Spider opened]
+[2021-06-23 10:02:02,225][MainThread:8728][task_id:scrapy.extensions.logstats][logstats.py:48][INFO][Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)]
+[2021-06-23 10:02:02,229][MainThread:8728][task_id:scrapy.extensions.telnet][telnet.py:69][INFO][Telnet console listening on 127.0.0.1:6023]
+[2021-06-23 10:02:37,719][MainThread:14560][task_id:scrapy.utils.log][log.py:147][INFO][Scrapy 2.5.0 started (bot: paper)]
+[2021-06-23 10:02:37,720][MainThread:14560][task_id:scrapy.utils.log][log.py:153][INFO][Versions: lxml 4.1.1.0, libxml2 2.9.5, cssselect 1.0.1, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 18:11:49) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.0j  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.19041-SP0]
+[2021-06-23 10:02:37,725][MainThread:14560][task_id:scrapy.crawler][crawler.py:60][INFO][Overridden settings:
+{'BOT_NAME': 'paper',
+ 'CONCURRENT_REQUESTS': 4,
+ 'DOWNLOAD_DELAY': 0.01,
+ 'DOWNLOAD_FAIL_ON_DATALOSS': False,
+ 'NEWSPIDER_MODULE': 'paper.spiders',
+ 'RETRY_TIMES': 6,
+ 'SPIDER_MODULES': ['paper.spiders']}]
+[2021-06-23 10:02:37,748][MainThread:14560][task_id:scrapy.extensions.telnet][telnet.py:55][INFO][Telnet Password: e572683d02b30547]
+[2021-06-23 10:02:37,777][MainThread:14560][task_id:scrapy.middleware][middleware.py:48][INFO][Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']]
+[2021-06-23 10:02:38,205][MainThread:14560][task_id:scrapy.middleware][middleware.py:48][INFO][Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'paper.middlewares.Randomproxys',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']]
+[2021-06-23 10:02:38,217][MainThread:14560][task_id:scrapy.middleware][middleware.py:48][INFO][Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']]
+[2021-06-23 10:02:38,220][MainThread:14560][task_id:scrapy.middleware][middleware.py:48][INFO][Enabled item pipelines:
+['paper.pipelines.PaperPipeline2']]
+[2021-06-23 10:02:38,221][MainThread:14560][task_id:scrapy.core.engine][engine.py:272][INFO][Spider opened]
+[2021-06-23 10:02:38,241][MainThread:14560][task_id:scrapy.extensions.logstats][logstats.py:48][INFO][Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)]
+[2021-06-23 10:02:38,244][MainThread:14560][task_id:scrapy.extensions.telnet][telnet.py:69][INFO][Telnet console listening on 127.0.0.1:6023]
+[2021-06-23 10:03:08,857][MainThread:17912][task_id:scrapy.utils.log][log.py:147][INFO][Scrapy 2.5.0 started (bot: paper)]
+[2021-06-23 10:03:08,858][MainThread:17912][task_id:scrapy.utils.log][log.py:153][INFO][Versions: lxml 4.1.1.0, libxml2 2.9.5, cssselect 1.0.1, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 18:11:49) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.0j  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.19041-SP0]
+[2021-06-23 10:03:08,862][MainThread:17912][task_id:scrapy.crawler][crawler.py:60][INFO][Overridden settings:
+{'BOT_NAME': 'paper',
+ 'CONCURRENT_REQUESTS': 4,
+ 'DOWNLOAD_DELAY': 0.01,
+ 'DOWNLOAD_FAIL_ON_DATALOSS': False,
+ 'NEWSPIDER_MODULE': 'paper.spiders',
+ 'RETRY_TIMES': 6,
+ 'SPIDER_MODULES': ['paper.spiders']}]
+[2021-06-23 10:03:08,880][MainThread:17912][task_id:scrapy.extensions.telnet][telnet.py:55][INFO][Telnet Password: 88e90df1c836569d]
+[2021-06-23 10:03:08,900][MainThread:17912][task_id:scrapy.middleware][middleware.py:48][INFO][Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']]
+[2021-06-23 10:03:09,425][MainThread:17912][task_id:scrapy.middleware][middleware.py:48][INFO][Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'paper.middlewares.Randomproxys',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']]
+[2021-06-23 10:03:09,443][MainThread:17912][task_id:scrapy.middleware][middleware.py:48][INFO][Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']]
+[2021-06-23 10:03:09,452][MainThread:17912][task_id:scrapy.middleware][middleware.py:48][INFO][Enabled item pipelines:
+['paper.pipelines.PaperPipeline2']]
+[2021-06-23 10:03:09,453][MainThread:17912][task_id:scrapy.core.engine][engine.py:272][INFO][Spider opened]
+[2021-06-23 10:03:09,494][MainThread:17912][task_id:scrapy.extensions.logstats][logstats.py:48][INFO][Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)]
+[2021-06-23 10:03:09,498][MainThread:17912][task_id:scrapy.extensions.telnet][telnet.py:69][INFO][Telnet console listening on 127.0.0.1:6023]

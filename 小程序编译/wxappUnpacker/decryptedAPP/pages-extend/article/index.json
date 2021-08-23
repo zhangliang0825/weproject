@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "热门资讯",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark",
+    "usingComponents": {
+        "custom-wrapper": "../../custom-wrapper",
+        "comp": "../../comp"
+    }
+}

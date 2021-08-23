@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>warn</title>
+</head>
+<body>
+
+    {% comment %}
+    {% for i in ids %}
+        {{ i.id }}
+    {% endfor %}
+    {% endcomment %}
+</body>
+</html>
+
+    {% csrf_token %}
+    <form action="">
+        是
+        <input type="radio"  name="rk" value="是" >
+        否
+        <input type="radio" name="rk" value="否" >
+        <input type="submit" value="是否入库">
+        <br>
+     {% if ruku == '是'%}
+        入库成功
+        {%endif%}
+    </form>
+
+
+
+
+        <form action="">
+        <select name="name">
+            <option name="name" value="长信">长信</option>
+            <option name="name" value="富安达">富安达</option>
+            <option name="name" value="中邮">中邮</option>
+            <option name="name" value="兴全">兴全</option>
+            <option name="name" value="中欧">中欧</option>
+            <option name="name" value="嘉实">嘉实</option>
+            <option name="name" value="建信">建信</option>
+            <option name="name" value="农银汇理">农银汇理</option>
+            <option name="name" value="国寿安保">国寿安保</option>
+            <option name="name" value="新华">新华</option>
+            <option name="name" value="银华">银华</option>
+            <option name="name" value="富国">富国</option>
+            <option name="name" value="国海富兰克林">国海富兰克林</option>
+            <option name="name" value="国泰元鑫">国泰元鑫</option>
+            <option name="name" value="鹏华">鹏华</option>
+            <input type="submit"  value="提交"/>
+            {%if name%}
+            <p><a href="http://www.zhangyupai.net/index.php?r=hisinfo/wxnotify&id={{risk_id}}">点击报警</a></p>
+            {%endif%}
+
+        </select>
+        </form>

@@ -1,0 +1,384 @@
+@-webkit-keyframes scale-in-y {
+    0% {
+        transform: scaleY(0);
+    }
+
+    to {
+        transform: scaleY(1);
+    }
+}
+
+@keyframes scale-in-y {
+    0% {
+        transform: scaleY(0);
+    }
+
+    to {
+        transform: scaleY(1);
+    }
+}
+
+@-webkit-keyframes scale-out-y {
+    0% {
+        transform: scaleY(1);
+    }
+
+    to {
+        transform: scaleY(0);
+    }
+}
+
+@keyframes scale-out-y {
+    0% {
+        transform: scaleY(1);
+    }
+
+    to {
+        transform: scaleY(0);
+    }
+}
+
+.portal-page .add-tip {
+    position: fixed;
+    right: 25rpx;
+    top: 12rpx;
+    background: #398bef;
+    padding: 16rpx 24rpx;
+    border-radius: 8rpx;
+    box-shadow: 0 3rpx 15rpx 0 rgba(0,0,0,.05);
+    font-weight: 700;
+    font-size: 28rpx;
+    color: #fff;
+    letter-spacing: 0.42rpx;
+    line-height: 30rpx;
+    z-index: 87;
+}
+
+.portal-page .add-tip:after {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent transparent #398bef;
+    border-style: solid;
+    border-width: 0 12rpx 12rpx;
+    position: absolute;
+    top: -12rpx;
+    right: 100rpx;
+}
+
+.portal-page>.entry-list,.portal-page>.search-box {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.portal-page>.search-box {
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 360rpx;
+    width: 100%;
+    text-align: center;
+    background-image: url(https://canyan.kp-static.com/bg/bg-index.jpg);
+}
+
+.portal-page>.search-box .link {
+    font-size: 40rpx;
+    color: #fff;
+}
+
+.portal-page>.entry-list {
+    flex-flow: row wrap;
+    margin-top: 32rpx;
+    background-color: #fff;
+    color: #464750;
+    font-size: 28rpx;
+    padding: 24rpx 10rpx;
+}
+
+.portal-page>.entry-list .entry {
+    flex: 0 0 25%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    flex-direction: column;
+    height: 183rpx;
+}
+
+.portal-page>.entry-list .entry>.icon {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 36rpx;
+    margin-bottom: 16rpx;
+}
+
+.portal-page>.entry-list .entry.active {
+    position: relative;
+}
+
+.portal-page>.entry-list .entry.active .point {
+    position: absolute;
+    top: 20rpx;
+    right: 16rpx;
+    background-image: linear-gradient(91deg,#f93a2f,#de042f);
+    box-shadow: 0 0 8rpx 0 rgba(168,45,45,.15);
+    border-radius: 20rpx;
+    font-size: 15rpx;
+    font-weight: 900;
+    color: #fff;
+    padding: 6rpx 10rpx;
+}
+
+.portal-page .entry-list.tt .entry {
+    flex: 0 0 33.33%;
+}
+
+.portal-page>.invite-notice {
+    position: fixed;
+    right: 0;
+    top: 65%;
+    z-index: 100;
+    width: 220rpx;
+    height: 80rpx;
+}
+
+.portal-page>.invite-notice .img {
+    width: 220rpx;
+    height: 80rpx;
+}
+
+.portal-page>.hot-brands {
+    padding: 0 32rpx 40rpx;
+}
+
+.portal-page>.hot-brands .typeBar {
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+}
+
+.portal-page .hot-supplier .supplier-swiper .supplier-list,.portal-page>.hot-brands .typeBar .typeItem {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.portal-page>.hot-brands .typeBar .typeItem {
+    font-size: 32rpx;
+    color: #989ba8;
+    letter-spacing: 0.48rpx;
+    text-align: right;
+    line-height: 32rpx;
+    padding: 0 16rpx;
+    transition: all .2s linear;
+    flex-direction: row;
+}
+
+.portal-page>.hot-brands .typeBar .typeItem .item-number {
+    font-weight: 700;
+    font-size: 22rpx;
+    color: #fff;
+    letter-spacing: 0;
+    line-height: 1;
+    padding: 8rpx 10rpx;
+    background: #ec586a;
+    border-radius: 18rpx;
+    margin-left: 18rpx;
+}
+
+.portal-page>.hot-brands .typeBar .typeItem.active {
+    color: #464750;
+    font-weight: 900;
+}
+
+.portal-page>.hot-brands .typeBar .typeItem.row2 {
+    border-left: 1rpx solid #b6b9c3;
+}
+
+.portal-page>.hot-brands>.brands-list {
+    margin-top: 32rpx;
+}
+
+.portal-page .banners {
+    height: 250rpx;
+}
+
+.portal-page .banner {
+    padding: 32rpx 32rpx 0;
+}
+
+.portal-page .banner>.cover {
+    width: 100%;
+}
+
+.portal-page .bottom-login-button {
+    font-size: 28rpx;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0;
+    line-height: 28rpx;
+    padding: 26rpx 104rpx;
+    background-image: -webkit-gradient(linear,left top,right top,from(#2570ac),to(#314b90));
+    background-image: -webkit-linear-gradient(left,#2570ac,#314b90);
+    background-image: -o-linear-gradient(left,#2570ac 0,#314b90 100%);
+    background-image: linear-gradient(90deg,#2570ac,#314b90);
+    box-shadow: 0 5rpx 20rpx 0 rgba(0,0,0,.25);
+    border-radius: 100rpx;
+    position: fixed;
+    bottom: 64rpx;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+.portal-page .hot-supplier {
+    background: #fff;
+    padding: 32rpx 32rpx 0;
+    margin-bottom: 40rpx;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.portal-page .hot-supplier .hot-title {
+    font-family: PingFangSC-Semibold;
+    font-size: 32rpx;
+    color: #464750;
+    letter-spacing: 0.48rpx;
+    line-height: 32rpx;
+    font-weight: 700;
+    padding: 8rpx 0 30rpx;
+}
+
+.portal-page .hot-supplier .supplier-swiper {
+    width: 100%;
+    height: 300rpx;
+}
+
+.portal-page .hot-supplier .supplier-swiper .supplier-list {
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.portal-page .hot-supplier .supplier-swiper .supplier-list .list-item {
+    width: 20%;
+    height: 130rpx;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.portal-page .hot-supplier .supplier-swiper .supplier-list .list-item.tea:last-child .icon-src {
+    width: 60rpx;
+}
+
+.portal-page .hot-supplier .supplier-swiper .supplier-list .list-item .tag {
+    font-family: Helvetica;
+    font-size: 16rpx;
+    color: #fff;
+    letter-spacing: 0.4rpx;
+    line-height: 1;
+    padding: 4rpx 6rpx 2rpx;
+    background-image: linear-gradient(91deg,#f93a2f,#de042f);
+    box-shadow: 0 0 8rpx 0 rgba(168,45,45,.15);
+    border-radius: 10rpx;
+    position: absolute;
+    top: 50rpx;
+    right: 10rpx;
+}
+
+.portal-page .hot-supplier .supplier-swiper .supplier-list .list-item .icon-src {
+    width: 48rpx;
+    display: block;
+    margin-bottom: 15rpx;
+}
+
+.portal-page .hot-supplier .supplier-swiper .supplier-list .list-item .item-name {
+    font-family: PingFangSC-Regular;
+    font-size: 20rpx;
+    color: #464750;
+    line-height: 1;
+    text-align: center;
+}
+
+.comp-project-search {
+    padding: 16rpx 67rpx;
+}
+
+.comp-project-search>.search {
+    background-color: #fff;
+    border-radius: 95rpx;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 18rpx 32rpx;
+    font-size: 28rpx;
+    color: #b6b9c3;
+}
+
+.comp-project-search>.search>.icomoon {
+    font-size: 30rpx;
+    margin-right: 10rpx;
+    color: #555;
+}
+
+.comp-project-search>.search>.desc {
+    font-size: 28rpx;
+    color: #999;
+}
+
+.scale-in-y {
+    animation: scale-in-y .4s cubic-bezier(.39,.575,.565,1) both;
+}
+
+.scale-out-y {
+    animation: scale-out-y .4s cubic-bezier(.39,.575,.565,1) both;
+}
+
+.index-adver-page {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.index-adver-page .page-box {
+    width: calc(100% - 150rpx);
+    background: 0 0;
+    margin-top: -100rpx;
+    overflow: hidden;
+}
+
+.index-adver-page .page-box .box-poster {
+    display: block;
+    width: 100%;
+    border-radius: 20rpx;
+    min-height: 800rpx;
+    margin-bottom: 42.5rpx;
+}
+
+.index-adver-page .page-box .icomoon {
+    display: block;
+    margin: 0 auto;
+    font-size: 78rpx;
+    color: #fff;
+    text-align: center;
+}

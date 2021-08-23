@@ -1,0 +1,118 @@
+.help-page,.loginPage {
+    background-color: #fff;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.help-page {
+    overflow: hidden;
+    padding: 32rpx;
+}
+
+.help-page .help-content {
+    font-size: 32rpx;
+    color: #1c1c1c;
+    letter-spacing: 0.9rpx;
+    margin: 0 0 32rpx;
+}
+
+.help-page .help-img {
+    width: 100%;
+}
+
+.loginPage {
+    width: 100vw;
+    height: 100vh;
+    padding-top: -30rpx;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.loginPage .logo {
+    width: 137rpx;
+    height: 120rpx;
+    margin-top: -100rpx;
+}
+
+.loginPage .avatar {
+    width: 160rpx;
+    height: 160rpx;
+    border-radius: 50%;
+    margin-top: -100rpx;
+}
+
+.loginPage .loginTitle {
+    font-size: 36rpx;
+    color: #1c1c1c;
+    letter-spacing: 0.9rpx;
+    margin: 33rpx 0 30rpx;
+    font-weight: 700;
+}
+
+.loginPage .loginDescribe {
+    font-size: 28rpx;
+    color: #989ba8;
+    letter-spacing: 0.7rpx;
+    text-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+}
+
+.loginPage .customButton {
+    line-height: 1;
+    background: 0 0;
+}
+
+.loginPage .customButton,.loginPage .customButton::after {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+.loginPage .loginButton {
+    width: 670rpx;
+    height: 88rpx;
+    font-size: 28rpx;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 100rpx;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 120rpx;
+}
+
+.loginPage .loginButton .icomoon {
+    font-weight: 400;
+    font-size: 40rpx;
+    margin-right: 16rpx;
+}
+
+.loginPage .userInfoButton {
+    background: #0cb85e;
+}
+
+.loginPage .mobileButton {
+    background-image: -webkit-gradient(linear,left top,right top,from(#2570ac),to(#314b90));
+    background-image: -webkit-linear-gradient(left,#2570ac,#314b90);
+    background-image: -o-linear-gradient(left,#2570ac 0,#314b90 100%);
+    background-image: linear-gradient(90deg,#2570ac,#314b90);
+}
+
+.loginPage .bottom-hint {
+    margin-top: 20rpx;
+    font-size: 24rpx;
+}
+
+.loginPage .bottom-hint .hint-highlight {
+    color: #2570ac;
+}

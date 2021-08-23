@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "简报保存",
+    "usingComponents": {
+        "custom-wrapper": "../../custom-wrapper",
+        "comp": "../../comp"
+    }
+}

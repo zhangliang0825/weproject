@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "开票详情",
+    "usingComponents": {
+        "custom-wrapper": "../../../custom-wrapper",
+        "comp": "../../../comp"
+    }
+}

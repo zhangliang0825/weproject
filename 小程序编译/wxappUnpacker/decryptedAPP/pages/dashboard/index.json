@@ -1,0 +1,10 @@
+{
+    "navigationBarTitleText": "个人中心",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark",
+    "navigationStyle": "custom",
+    "usingComponents": {
+        "custom-wrapper": "../../custom-wrapper",
+        "comp": "../../comp"
+    }
+}

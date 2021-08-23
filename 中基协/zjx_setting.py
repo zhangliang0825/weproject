@@ -1,0 +1,9 @@
+
+
+MYSQL_HOST = '120.26.106.222'
+MYSQL_USER = 'julai01'
+MYSQL_PASSWORD = 'Sh51785136@sh'
+MYSQL_DATABASE = 'jijin'
+
+
+

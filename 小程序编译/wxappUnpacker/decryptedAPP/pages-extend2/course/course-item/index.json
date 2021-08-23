@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "窄门学社",
+    "usingComponents": {
+        "custom-wrapper": "../../../custom-wrapper",
+        "comp": "../../../comp"
+    }
+}

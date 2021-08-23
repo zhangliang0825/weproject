@@ -1,20 +1,20 @@
 import asyncio
+import copy
 import csv
 import json
 import logging
 import re
 import time
 
+import aiofiles as aiofiles
 import async_timeout
-import pymysql
-from loguru import logger
-from aiomysql import OperationalError
+
 from retrying import retry
 import aiohttp
 from lxml import etree
 import aiomysql
 
-CONCURRENCY = 30
+CONCURRENCY = 10
 semaphore = asyncio.Semaphore(CONCURRENCY)
 stop = False
 all_data_urls = set()
@@ -68,29 +68,79 @@ async def fetch(session,url,):
                 except Exception as e:
                     print(e)
 
-# async def update_data(sql):
-#     global g_pool
-#     with (await g_pool) as conn:
-#         cursor = await conn.cursor()
-#
-#         await cursor.execute(sql)
-#         print(cursor.rowcount)
 
 
+async def wirte_demo(all_data):
+    # 异步方式执行with操作,修改为 async with
+    async with aiofiles.open("vaild_record.txt","w",encoding="utf-8") as fp:
+        await fp.write(all_data)
+        print("数据写入成功")
 
-async def run(sql,key,values):
+async def read_demo():
+    async with aiofiles.open("vaild_record.txt","r",encoding="utf-8") as fp:
+        content = await fp.read()
+        return  content
 
+
+all_vaild_word_dict = {}
+async def run(sql1,key,values,tags):
+    key1 = 'tongyici{}'.format(key)
+    key2 = 'valid_words{}'.format(key)
     conn = await aiomysql.connect(host='120.26.211.213', user='julai01', password='Zycj@2020688', db='wemedia', charset='utf8mb4',)
-    # conn = await aiomysql.connect(host='120.26.106.222', user='julai01', password='Sh51785136@sh', db='jijin',
-    #     charset='utf8mb4', )
+    conn2 = await aiomysql.connect(host='120.26.106.222', user='julai01', password='Sh51785136@sh', db='jijin',
+        charset='utf8mb4', )
 
-    cursor = await conn.cursor()
-    await cursor.execute(sql,(key,values))
-    num = cursor.rowcount
+    if key1 and tags in [True,False]:
+        cursor = await conn.cursor()
+        await cursor.execute(sql1,(values,key1))
 
-    await conn.commit()
-    conn.close()
 
+        await conn.commit()
+        conn.close()
+        print('数据已经插入...')
+
+        cursor2 = await conn2.cursor()
+        await cursor2.execute(sql1, (values, key1))
+
+
+        await conn2.commit()
+
+
+
+    if key2 and tags in [True]:
+        cursor2 = await conn2.cursor()
+        sql = 'select info from `sysparam` where variable = %s'
+
+        await cursor2.execute(sql, (key2))
+        all_data = await cursor2.fetchone()
+        if all_data:
+            all_data_ = all_data[0].strip('/').split("/")
+            print(all_data_,222222222211)
+
+            all_data_copy = copy.deepcopy(all_data_)
+            info_values = map(lambda x:re.sub('GS|CP|JL|=|GG|\[|\]| %s |%s '%(key,key),'',x),values[0].split("/"))
+
+            
+            all_data_.extend(info_values)
+            all_data_all = list(sorted(set(all_data_),key=all_data_.index))
+            all_data_all_text = '/'.join(all_data_all).strip('/')
+
+            all_vaild_word_dict[key2] = all_data_all_text
+
+
+            save_content = await read_demo()
+            save_content_dict = eval(save_content).get(key2)
+
+            new_all_data_all_text_ = all_data_all
+            save_content_dict_ = save_content_dict.split("/")
+            diff_record = set(new_all_data_all_text_) - set(save_content_dict_)
+            all_data_copy.extend(list(diff_record))
+
+            all_data_copy_text = '/'.join(all_data_copy ).strip("/")
+            await cursor2.execute(sql1, (all_data_copy_text, key2))
+            await conn2.commit()
+
+            print('vaild_words更新',all_data_copy_text)
 
 async def parse(html):
     HTML = etree.HTML(html)
@@ -145,7 +195,7 @@ async def parse_details(html,name,session,url):
         name = all_jj_name_.get(name)
     else:
         name = name
-    #{} [[GS]]=={}基金/
+
     all_cp_data = ['{} [[GS]]=={}基金/'.format(name,name),]
     for info in all_data_:
         jj_name = info.xpath("./td[@class='fund-name-code']/a[1]/text()")
@@ -172,12 +222,11 @@ async def parse_details(html,name,session,url):
     all_data_cjg__ = sorted(list(set(all_data_cjg)),key= all_data_cjg.index)
     all_data_dict.setdefault(name,[]).append(''.join(all_data_cjg__))
     for key,values in all_data_dict.items():
+        # if key =='招商':
 
-        key = 'tongyici{}'.format(key)
-        print(key, values)
-        sql = 'update sysparam set info =%s where variable = %s'
-        # sql = 'insert into sysparam ( info,variable) values (%s,%s)'
-        await run(sql,values,key)
+            sql = 'update sysparam set info =%s where variable = %s'
+
+            await run(sql,key,values,True)
 
 
 #建立一个请求session
@@ -199,33 +248,34 @@ async def download2(url,name):
             # print(url)
 
 
-async def run2():
-    # asyncio.sleep(1)
-    # conn = await aiomysql.connect(host='120.26.211.213', user='julai01', password='Zycj@2020688', db='wemedia',
-    #     charset='utf8mb4', )
-    # cursor = await conn.cursor()
-    # await conn.ping(reconnect=True)
-    # sql = 'SELECT variable,info FROM sysparam WHERE variable LIKE "%tongyici%"'
-    #
-    # await cursor.execute(sql)
+async def run2(name):
     await asyncio.sleep(1)
-    # dict_reslut = {key.strip('tongyici'): value.strip() for key, value in await cursor.fetchall()}
-    with open('tongyici.txt', 'r') as f:
-        dict_reslut = eval(f.read())
+    conn = await aiomysql.connect(host='120.26.211.213', user='julai01', password='Zycj@2020688', db='wemedia',
+        charset='utf8mb4', )
+    cursor = await conn.cursor()
+    await conn.ping(reconnect=True)
+    sql = f'SELECT variable,info FROM sysparam WHERE variable LIKE "tongyici{name}"'
+    await asyncio.sleep(1)
+    await cursor.execute(sql)
+
+    await asyncio.sleep(1)
+    dict_reslut = {key.strip('tongyici'): value.strip() for key, value in await cursor.fetchall()}
+    # with open('tongyici.txt', 'r') as f:
+    #     dict_reslut = eval(f.read())
 
 
-    # await cursor.close()
-    # conn.close()
-        return dict_reslut
+    await cursor.close()
+    conn.close()
+    return dict_reslut
 
     # await conn.commit()
     #
 
 
 async  def haomai_parse_(html):
-    asyncio.sleep(1)
+    await asyncio.sleep(1)
 
-    dict_reslut = await run2()
+
 
     # for variable,info in reslut_s:
     HTML = etree.HTML(html)
@@ -239,17 +289,18 @@ async  def haomai_parse_(html):
     diff_name = set(lizhi_name_list) - set(zaizhi_name_list)
     data_list = list(diff_name)
 
-    print(data_list,222222221)
+
     if name in all_jj_name_:
         name = all_jj_name_[name]
     else:
         name = name
-
+    # if name =='招商':
+    dict_reslut = await run2(name)
     data_list = dict_reslut.get(name,'')+''.join([' {} [[LZ]]={}/'.format(name,i) for i in data_list])
 
     sql = 'update sysparam set info =%s where variable = %s'
 
-    await run(sql, data_list,'tongyici'+name)
+    await run(sql,name, data_list,False)
 
 
 async def download_haomai(url,):
@@ -282,22 +333,24 @@ async def haomai(url):
 
 
 if __name__ == '__main__':
-    # start_time = time.time()
-    # loop = asyncio.get_event_loop()
-    # get_future = asyncio.ensure_future(download("http://fund.eastmoney.com/Company/80538609.html"))
-    # loop.run_until_complete(get_future)
-    # result_URL = get_future.result()
-    # result = [i for i in result_URL]
-    #
-    # tasks = [asyncio.ensure_future(download2(i[0],i[1])) for i in result]
-    #
-    # asyreslut = asyncio.gather(*tasks)
-    # loop.run_until_complete(asyreslut)
-    # end_time = time.time()
-    # print(end_time - start_time)
-
-
+    start_time = time.time()
     loop = asyncio.get_event_loop()
+    get_future = asyncio.ensure_future(download("http://fund.eastmoney.com/Company/80538609.html"))
+    loop.run_until_complete(get_future)
+    result_URL = get_future.result()
+    result = [i for i in result_URL]
+
+    tasks = [asyncio.ensure_future(download2(i[0],i[1])) for i in result]
+
+    asyreslut = asyncio.gather(*tasks)
+    loop.run_until_complete(asyreslut)
+    end_time = time.time()
+    print(end_time - start_time)
+
+    print('数据开始保存.....')
+    loop.run_until_complete(wirte_demo(str(all_vaild_word_dict)))
+    print('开始更新基金经理.....')
+
     get_future = asyncio.ensure_future(haomai('https://www.howbuy.com/fund/company/ajax.htm'))
     loop.run_until_complete(get_future)
     result_URL = get_future.result()

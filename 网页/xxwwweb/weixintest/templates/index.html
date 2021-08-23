@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+    {% comment %}
+    {% csrf_token %}
+    <form action="{% url 'weixintest:WX' %}" method="post">
+        <input type="submit" value="点击查看">
+    </form>
+    {% endcomment %}
+
+
+    {% for id in ids %}
+        <div>
+            {{ id }}
+            <a href="{% url 'weixintest:button' id %}">点击查看</a>
+        </div>
+    {% endfor %}
+
+
+    {# <input type="button" href="{% url 'weixintest:button' id %}" value="点击查看"> #}
+
+    {# <a href="{% url 'weixintest:button' id %}">点击查看</a> #}
+</body>
+</html>

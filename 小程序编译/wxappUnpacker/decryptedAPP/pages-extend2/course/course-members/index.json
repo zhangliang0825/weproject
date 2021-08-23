@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "往期学员",
+    "usingComponents": {
+        "custom-wrapper": "../../../custom-wrapper",
+        "comp": "../../../comp"
+    }
+}

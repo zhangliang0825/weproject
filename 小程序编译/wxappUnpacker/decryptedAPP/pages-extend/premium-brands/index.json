@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "优选加盟品牌展示",
+    "usingComponents": {
+        "custom-wrapper": "../../custom-wrapper",
+        "comp": "../../comp"
+    }
+}

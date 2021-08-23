@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "供应链线上对接会",
+    "usingComponents": {
+        "custom-wrapper": "../../custom-wrapper",
+        "comp": "../../comp"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "品牌对比",
+    "usingComponents": {
+        "custom-wrapper": "../../custom-wrapper",
+        "comp": "../../comp"
+    }
+}
