@@ -36,3 +36,4 @@ for key1,str_date,reportcat in data_list:
         response = requests.post('http://www.zhangyupai.net:8181/uploadfile/',
                                  files=files, data=data).text
         print(response)
+167
