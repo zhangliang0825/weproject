@@ -15,3 +15,9 @@
 2021-08-23 10:35:43.110 | DEBUG    | weeklipdf_post:get_content:155 - {"filename":"20210823ribaopingan.pdf","token":"{\"path\":\"/var/www/html/jijin/upload/pingan/\",\"name\":\"20210823平安基金每日报告\"}","code":1}
 2021-08-23 11:01:25.545 | DEBUG    | weeklipdf_post:get_content:155 - {"filename":"20210820zhoubaohaifutong.pdf","token":"{\"path\":\"/var/www/html/jijin/upload/haifutong/\",\"name\":\"20210820海富通基金每周报告\"}","code":1}
 2021-08-23 11:07:36.946 | DEBUG    | weeklipdf_post:get_content:155 - {"filename":"20210823ribaohtzg.pdf","token":"{\"path\":\"/var/www/html/jijin/upload/htzg/\",\"name\":\"20210823海通资管基金每日报告\"}","code":1}
+2021-08-23 14:15:12.648 | DEBUG    | weeklipdf_post:get_content:155 - {"filename":"20210823ribaogyzc.pdf","token":"{\"path\":\"/var/www/html/jijin/upload/gyzc/\",\"name\":\"20210823高毅资产舆情日报\"}","code":1}
+2021-08-23 14:15:32.145 | DEBUG    | weeklipdf_post:get_content:155 - {"filename":"20210823ribaogyzc.pdf","token":"{\"path\":\"/var/www/html/jijin/upload/gyzc/\",\"name\":\"20210823高毅资产每日报告\"}","code":1}
+2021-08-23 14:39:12.532 | DEBUG    | weeklipdf_post:get_content:155 - {"filename":"20210823zhoubaogtyx.pdf","token":"{\"path\":\"/var/www/html/jijin/upload/gtyx/\",\"name\":\"20210823国泰元鑫资产舆情周报\"}","code":1}
+2021-08-23 15:02:51.840 | DEBUG    | weeklipdf_post:get_content:155 - {"filename":"20210823ribaozhongjixie.pdf","token":"{\"path\":\"/var/www/html/jijin/upload/zhongjixie/\",\"name\":\"20210823基金规范营销每日报告\"}","code":1}
+2021-08-23 15:33:35.016 | DEBUG    | weeklipdf_post:get_content:155 - {"filename":"20210823ribaotianhong.pdf","token":"{\"path\":\"/var/www/html/jijin/upload/tianhong/\",\"name\":\"20210823天弘基金合规风险动态简报\"}","code":1}
+2021-08-23 16:51:45.117 | DEBUG    | weeklipdf_post:get_content:155 - {"filename":"20210823ribaozhaoshan.pdf","token":"{\"path\":\"/var/www/html/jijin/upload/zhaoshan/\",\"name\":\"20210823招商基金每日报告\"}","code":1}
