@@ -89,7 +89,7 @@ class ToutiaoSpider(scrapy.Spider):
     def start_requests(self):
 
         self.ua = 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 SE 2.X MetaSr 1.0'
-        self.db = pymysql.connect(host=self.host, user=self.user, password=self.password, database=self.database, charset='utf8')
+        self.db = pymysql.connect(self.host, self.user, self.password, self.database, charset='utf8')
         self.cursor = self.db.cursor()  # 创建游标
         sql = 'select num from num_crawl where id = 1'
         self.cursor.execute(sql)
@@ -98,10 +98,10 @@ class ToutiaoSpider(scrapy.Spider):
         sql = 'update num_crawl set num = %s where id = 1'
         self.cursor.execute(sql, (self.end_num))
         self.db.commit()
-        sql = '''SELECT distinct media,link,token,url,is_jj FROM media WHERE post_type IN (1) AND link <> "" and token is not NULL and id <=6000 and TYPE IS NULL and id = 120'''
+        sql = '''SELECT distinct media,link,token,url,is_jj FROM media WHERE post_type IN (1) AND link <> "" and token is not NULL and id <=6000 and TYPE IS NULL'''
         self.cursor.execute(sql)
         all_data_list = self.cursor.fetchall()
-        for meida, media_id, token,start_num,is_jj  in all_data_list:
+        for meida, media_id, token,start_num,is_jj in all_data_list:
 
             first_params = self.get_as_cp_signature(token,self.cookies)
             first_params['visit_user_token'] = token
@@ -131,7 +131,7 @@ class ToutiaoSpider(scrapy.Spider):
         media = response.meta['media']
         is_jj = response.meta["is_jj"]
         if r_data:
-            self.mylog.info((media,'数据更新.....'))
+            self.mylog.info((media,'数据正常'))
             sql = 'update media set url = %s where link =%s'
             self.cursor.execute(sql, (self.num,media))
             self.db.commit()
@@ -185,7 +185,7 @@ class ToutiaoSpider(scrapy.Spider):
                         sql = 'update media set post_type = %s where link =%s'
                         self.cursor.execute(sql, (2, media.strip()))
                         self.db.commit()
-                        print(behot_time, media, 22222222222222222222222, '推送的时间太长了.....')
+                
                     if '前' in behot_time:
                         continue
                     id_ = item.get("item_id")
@@ -193,24 +193,18 @@ class ToutiaoSpider(scrapy.Spider):
                 if id_:
                     index_url = 'https://toutiao.com/i{}'.format(id_)
                     ex = self.redis.sadd('crawledtt_url', index_url)
-                    if ex == 0:
+                 
+                    if ex == 1:
                         if 'iNone' not in index_url:
-
-                            if is_jj =='1':
-                                index_url = index_url+"/?"
-                                self.redis.lpush('TTurl:start_urls', index_url)
-                            else:
-                                self.redis.lpush('TTurl:start_urls', index_url)
-                                index_url = index_url
-                            print(index_url)
-                    else:
-                        print('数据已存在...')
+                          
+                            self.redis.lpush('TTurl:start_urls', index_url)
+                            self.mylog.info((media, index_url,'数据进库....'))
+         
 
 
 
         else:
             print('没有数据的key1',media)
-        #     sql = 'update media set post_type = %s where link =%s'
-        #     self.cursor.execute(sql, (3, media.strip()))
-        #     self.db.commit()
-        #     print(media.strip(),'头条号数据不存在.............')
+            sql = 'update media set post_type = %s where link =%s'
+            self.cursor.execute(sql, (3, media.strip()))
+            self.db.commit()

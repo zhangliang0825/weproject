@@ -94,10 +94,10 @@ class ToutiaoSpider(scrapy.Spider):
         sql = 'update num_crawl set num = %s where id = 5'
         self.cursor.execute(sql, (self.end_num))
         self.db.commit()
-        sql = '''SELECT distinct media,link,token,url FROM media WHERE post_type IN (1) AND link <> "" and token is not NULL and id between 24000 and 30000  and TYPE IS NULL'''
+        sql = '''SELECT distinct media,link,token,url,is_jj FROM media WHERE post_type IN (1) AND link <> "" and token is not NULL and id between 24000 and 30000  and TYPE IS NULL'''
         self.cursor.execute(sql)
         all_data_list = self.cursor.fetchall()
-        for meida, media_id, token, start_num in all_data_list:
+        for meida, media_id, token, start_num,is_jj in all_data_list:
 
             first_params = self.get_as_cp_signature(token, self.cookies)
             first_params['visit_user_token'] = token
@@ -110,7 +110,7 @@ class ToutiaoSpider(scrapy.Spider):
                 print(int(self.num), int(start_num), int(self.num) - int(start_num), '数据通过')
 
                 meta = {'media': media_id, 'token': token, 'dont_redirect': True,
-                        'handle_httpstatus_list': [301]}
+                        'handle_httpstatus_list': [301],'is_jj':is_jj}
 
                 yield scrapy.Request(index_url, callback=self.parse, meta=copy.deepcopy(meta),
                     dont_filter=True)
@@ -122,7 +122,7 @@ class ToutiaoSpider(scrapy.Spider):
         yesterday_format = datetime.today() + timedelta(-1)
         yesterday = yesterday_format.strftime('%Y%m%d')
         r_data = json.loads(response.text).get("data")
-
+        is_jj = response.meta["is_jj"]
         media = response.meta['media']
         if r_data:
             self.mylog.info((media, '数据更新.....'))
@@ -189,13 +189,17 @@ class ToutiaoSpider(scrapy.Spider):
                     ex = self.redis.sadd('crawledtt_url', index_url)
                     if ex == 1:
                         if 'iNone' not in index_url:
+
                             self.redis.lpush('TTurl:start_urls', index_url)
-                    else:
-                        print('数据已存在...')
+                            self.mylog.info((media, index_url, '数据进库....'))
+
 
 
 
         else:
+            sql = 'update media set post_type = %s where link =%s'
+            self.cursor.execute(sql, (3, media.strip()))
+            self.db.commit()
             print('没有数据的key1', media)
         #     sql = 'update media set post_type = %s where link =%s'
         #     self.cursor.execute(sql, (3, media.strip()))

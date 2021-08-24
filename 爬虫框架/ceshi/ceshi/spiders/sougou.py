@@ -72,7 +72,7 @@ class SougouSpider(scrapy.Spider):
         self.db1 = pymysql.connect(self.host, self.user,
             self.password, self.database4, charset='utf8')
         self.cursor1 = self.db1.cursor()
-        sql = 'select word from words where del_flag = 0 and id = 145 ORDER BY choose_flag ASC'
+        sql = 'select word from words where del_flag = 0 ORDER BY choose_flag ASC'
         self.cursor1.execute(sql)
         self.word_data = set([i[0].replace("+", " ") for i in self.cursor1.fetchall()])
 

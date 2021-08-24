@@ -25,7 +25,7 @@ class SouhuSpider(scrapy.Spider):
     allowed_domains = ['www.sohu.com/']
 
     custom_settings = {
-        'DOWNLOAD_DELAY':0.2,
+        'DOWNLOAD_DELAY':0.5,
         'CONCURRENT_REQUESTS' : 26
     }
 
@@ -43,7 +43,7 @@ class SouhuSpider(scrapy.Spider):
         self.db = pymysql.connect(self.host, self.user,
             self.password, self.database, charset='utf8')
         self.cursor = self.db.cursor()
-        sql = '''select distinct names,media from souhu where ty is null'''
+        sql = '''select distinct names,media from souhu where ty is null and id <=7239'''
         self.cursor.execute(sql)
         self.all_data = [i for i in self.cursor.fetchall()]
         self.mylog = getLoger(self.name + '.log')
@@ -63,7 +63,7 @@ class SouhuSpider(scrapy.Spider):
             response = requests.get(id_code_url)
             id_code = re.search(r"\+'(.*?)'\);", response.text).group(1)
             for page in range(1,3):
-                time.sleep(0.3)
+             
                 newmd5 = self.md5(name_id,page,id_code)
                 url = f'http://v2.sohu.com/author-page-api/author-articles/pc/{name_id}?pNo={page}&secretStr={newmd5}'
                 yield scrapy.Request(url,callback=self.parse,dont_filter=True,meta=copy.deepcopy({'name':name}))

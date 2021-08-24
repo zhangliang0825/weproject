@@ -12,6 +12,8 @@ import scrapy
 
 from redis import Redis
 from scrapy.utils.project import get_project_settings
+from loguru import logger
+import asyncio
 
 
 
@@ -22,12 +24,11 @@ class SouhuSpider(scrapy.Spider):
     allowed_domains = ['www.sohu.com/']
 
     custom_settings = {
-        'DOWNLOADER_MIDDLEWARES':{
-        'ceshi.middlewares.GetFailedrequsts':543
-        }
-
+        'DOWNLOADER_MIDDLEWARES': {
+            'ceshi.middlewares.GetFailedrequsts': 543
+        },
+        'DOWNLOAD_DELAY':0.5
     }
-
 
     def __init__(self, **kwargs):
 
@@ -37,16 +38,21 @@ class SouhuSpider(scrapy.Spider):
         self.user = get_setting.get("MYSQL_USER3")
         self.password = get_setting.get("MYSQL_PASSWORD3")
         self.database = get_setting.get("MYSQL_DATABASE4")
-        self.db = pymysql.connect(host = self.host, user=self.user,
-            password=self.password,database= self.database, charset='utf8')
+        self.db = pymysql.connect(self.host, self.user,
+            self.password, self.database, charset='utf8')
         self.cursor = self.db.cursor()
         sql = '''select names from souhu'''
         self.cursor.execute(sql)
         self.all_data = [i[0] for i in self.cursor.fetchall()]
 
+        sql = '''SELECT DISTINCT NAMES,media FROM souhu WHERE ty =1'''
+        self.cursor.execute(sql)
+        self.all_data_exclude = [i[0] for i in self.cursor.fetchall()]
+
+
         sql = 'select word from words'
         self.cursor.execute(sql)
-        sql = 'select word from words where del_flag = 0  and id = 145 ORDER BY choose_flag ASC'
+        sql = 'select word from words where del_flag = 0 ORDER BY choose_flag ASC'
         self.cursor.execute(sql)
         self.word_data = set([i[0].replace("+", " ") for i in self.cursor.fetchall()])
         self.mylog = getLoger(self.name + '.log')
@@ -100,33 +106,30 @@ class SouhuSpider(scrapy.Spider):
         
 
         for word in self.word_data:
-            print(word)
             for i in range(1,11):
                 page = i*10
                 url = self.get_url(word,page)
-
+           
                 yield scrapy.Request(url,callback=self.parse,dont_filter=True)
 
 
     def parse(self, response):
-
         yesterday = datetime.today() + timedelta(-1)
         yesterday_str = yesterday.strftime('%Y%m%d')
         # print(response.request.headers)
         data_json = json.loads(response.text)
-
         all_data = data_json.get('data').get('news')
 
         for info in all_data:
             authorName = info.get('authorName')
             authorId = info.get('authorId')
-
+            print(authorName)
 
             postTime = str(info.get('postTime'))[:-3]
             postTime = time.localtime(int(postTime))
             other_time = time.strftime('%Y%m%d',postTime)
             
-            if other_time>=yesterday_str:
+            if other_time>=yesterday_str and authorName not in self.all_data_exclude:
                 url = info.get('url').replace('http', 'https')
                 ex = self.redis.sadd('crawledsh_url', url)
                 print(url,ex)

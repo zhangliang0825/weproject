@@ -98,10 +98,10 @@ class ToutiaoSpider(scrapy.Spider):
         sql = 'update num_crawl set num = %s where id = 4'
         self.cursor.execute(sql, (self.end_num))
         self.db.commit()
-        sql = '''SELECT distinct media,link,token,url FROM media WHERE post_type IN (1) AND link <> "" and token is not NULL and id between 18000 and 240000 and TYPE IS NULL'''
+        sql = '''SELECT distinct media,link,token,url,is_jj FROM media WHERE post_type IN (1) AND link <> "" and token is not NULL and id between 18000 and 24000 and TYPE IS NULL'''
         self.cursor.execute(sql)
         all_data_list = self.cursor.fetchall()
-        for meida, media_id, token,start_num in all_data_list:
+        for meida, media_id, token,start_num,is_jj in all_data_list:
 
             first_params = self.get_as_cp_signature(token,self.cookies)
             first_params['visit_user_token'] = token
@@ -113,7 +113,7 @@ class ToutiaoSpider(scrapy.Spider):
             if int(self.num) - int(start_num)>1:
 
                 meta = {'media': media_id, 'token': token, 'dont_redirect': True,
-                     'handle_httpstatus_list': [301]}
+                     'handle_httpstatus_list': [301],'is_jj':is_jj}
 
                 yield scrapy.Request(index_url, callback=self.parse,meta=copy.deepcopy(meta),
                                 dont_filter=True)
@@ -129,9 +129,8 @@ class ToutiaoSpider(scrapy.Spider):
 
         media = response.meta['media']
 
-        self.mylog.info((media.strip()+'数据记录..'))
         if r_data:
-
+            self.mylog.info((media,'数据正常'))
             sql = 'update media set url = %s where link =%s'
             self.cursor.execute(sql, (self.num,media))
             self.db.commit()
@@ -185,7 +184,7 @@ class ToutiaoSpider(scrapy.Spider):
                         sql = 'update media set post_type = %s where link =%s'
                         self.cursor.execute(sql, (2, media.strip()))
                         self.db.commit()
-                        print(behot_time, media, 22222222222222222222222, '推送的时间太长了.....')
+
                     if '前' in behot_time:
                         continue
                     id_ = item.get("item_id")
@@ -196,10 +195,13 @@ class ToutiaoSpider(scrapy.Spider):
                     if ex == 1:
                         if 'iNone' not in index_url:
                             self.redis.lpush('TTurl:start_urls', index_url)
-                    else:
-                        print('数据已存在...')
+                            self.mylog.info((media, index_url, '数据进库....'))
+
 
 
 
         else:
+            sql = 'update media set post_type = %s where link =%s'
+            self.cursor.execute(sql, (3, media.strip()))
+            self.db.commit()
             print(media,'没有数据的key1')

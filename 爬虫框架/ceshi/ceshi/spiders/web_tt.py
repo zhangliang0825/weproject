@@ -42,7 +42,8 @@ class WebttSpider(scrapy.Spider):
 
             'toutiao.pipelines.BaiDuPipeline': None,
 
-        }}
+        },
+    'DOWNLOAD_DELAY':1}
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)

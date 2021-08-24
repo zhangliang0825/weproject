@@ -28,12 +28,16 @@ class SouhuSpider(scrapy.Spider):
         self.password = get_setting.get("MYSQL_PASSWORD3")
         self.database = get_setting.get("MYSQL_DATABASE4")
         self.cookies = get_project_settings().get("COOKIES_TT_WEB3")
-        self.db = pymysql.connect(host=self.host, user=self.user,
-            password=self.password,database= self.database, charset='utf8')
+        self.db = pymysql.connect(self.host, self.user,
+            self.password, self.database, charset='utf8')
         self.cursor = self.db.cursor()
-        sql = '''select names from souhu_copy'''
+        sql = '''select names from souhu'''
         self.cursor.execute(sql)
         self.all_data = [i[0] for i in self.cursor.fetchall()]
+
+        sql = '''SELECT DISTINCT NAMES,media FROM souhu WHERE ty =1'''
+        self.cursor.execute(sql)
+        self.all_data_exclude = [i[0] for i in self.cursor.fetchall()]
 
 
     def start_requests(self):
@@ -58,7 +62,7 @@ class SouhuSpider(scrapy.Spider):
                     text_id = item.get("id")
                     authorId = item.get("authorId")
                     index_url = 'https://www.sohu.com/a/{}_{}'.format(text_id, authorId)
-                    if post_time>=yesterday:
+                    if post_time>=yesterday and authorName not in self.all_data_exclude:
                         ex = self.redis.sadd('crawledsh_url', index_url)
                         print(index_url,ex)
                         if ex == 1:

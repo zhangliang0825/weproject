@@ -2,26 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5b4a797-b507-4efa-acf1-3c94ee37b846" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/数据处理清洗/log_text.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/文件上传/20210823ribaogtyx.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/文件上传/20210824ribaoboshi.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/文件上传/20210824ribaochangxin.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/文件上传/20210824ribaodzzg.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/文件上传/20210824ribaofuanda.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/文件上传/20210824ribaofullgoal.pdf" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/文件上传/20210824ribaogtyx.pdf" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/文件上传/20210824ribaoguohai.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/文件上传/20210824ribaohuaan.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/文件上传/20210824ribaojiaoyin.pdf" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/文件上传/20210824ribaopenghua.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/爬虫框架/ceshi/log/web_tt.log.2021-08-23_17" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/文件上传/20210824ribaopingan.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/文件上传/20210824ribaotianhong.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/文件上传/20210824ribaoxinquan.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/文件上传/20210824ribaozhongou.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/文件上传/20210824ribaozhongyou.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/文件上传/20210824ribaozxbc.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/文件上传/上传数据报告.2021-08-23_10-21-12_608992.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/爬虫框架/ceshi/log/souhu_id.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/爬虫框架/ceshi/log/tt_id_6.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/爬虫框架/ceshi/start7.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/微信/Weixin_Login.py" beforeDir="false" afterPath="$PROJECT_DIR$/微信/Weixin_Login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/数据处理清洗/delete_dup.py" beforeDir="false" afterPath="$PROJECT_DIR$/数据处理清洗/delete_dup.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/文件上传/ghostdriver.log" beforeDir="false" afterPath="$PROJECT_DIR$/文件上传/ghostdriver.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/文件上传/上传数据报告.log" beforeDir="false" afterPath="$PROJECT_DIR$/文件上传/上传数据报告.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/标签/Semantic_processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/标签/Semantic_processing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/标签/miangongmu.py" beforeDir="false" afterPath="$PROJECT_DIR$/标签/miangongmu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/标签/runtime.log" beforeDir="false" afterPath="$PROJECT_DIR$/标签/runtime.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/middlewares.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/sougou.py" beforeDir="false" afterPath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/sougou.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/souhu.py" beforeDir="false" afterPath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/souhu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/souhu_id.py" beforeDir="false" afterPath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/souhu_id.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/souhu_web.py" beforeDir="false" afterPath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/souhu_web.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/tt_id.py" beforeDir="false" afterPath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/tt_id.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/tt_id_.py" beforeDir="false" afterPath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/tt_id_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/tt_id_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/tt_id_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/tt_id_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/tt_id_3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/tt_id_4.py" beforeDir="false" afterPath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/tt_id_4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/tt_id_5.py" beforeDir="false" afterPath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/tt_id_5.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/web_tt.py" beforeDir="false" afterPath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/web_tt.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/爬虫框架/ceshi/log/web_tt.log" beforeDir="false" afterPath="$PROJECT_DIR$/爬虫框架/ceshi/log/web_tt.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/爬虫框架/ceshi/log/web_tt.log.2021-08-02_08" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/爬虫框架/ceshi/start_web_tt.py" beforeDir="false" afterPath="$PROJECT_DIR$/爬虫框架/ceshi/start_web_tt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/爬虫框架/ceshi/log/web_tt.log.2021-08-02_10" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -266,6 +284,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="NEW_TOOLWINDOW_STRIPE_DEFAULTS" value="true" />
+    <property name="ToolWindowFile Transfer.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
@@ -274,12 +293,12 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.17.3" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.17.3" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/爬虫框架/ceshi" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../工作代码" />
     <property name="nodejs_interpreter_path" value="$PROJECT_DIR$/../../nodejs/node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -308,7 +327,7 @@
       <recent name="D:\代码脚本\项目程序\爬虫框架\ceshi\ceshi\spiders" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.start_web_tt">
+  <component name="RunManager" selected="Python.start7">
     <configuration name="demo.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="demo.js" working-dir="$PROJECT_DIR$/爬虫js代码/爬虫/抖音">
       <method v="2" />
     </configuration>
@@ -326,28 +345,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/微信/Weixin_Login.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="delete_dup" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="项目程序" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/数据处理清洗" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/数据处理清洗/delete_dup.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -400,6 +397,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="start7" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="项目程序" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/爬虫框架/ceshi" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/爬虫框架/ceshi/start7.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="start_web_tt" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="项目程序" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -424,11 +443,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.start7" />
         <item itemvalue="Python.start_web_tt" />
         <item itemvalue="Python.souhu_start_id" />
         <item itemvalue="Python.miangongmu" />
         <item itemvalue="Python.Weixin_Login" />
-        <item itemvalue="Python.delete_dup" />
       </list>
     </recent_temporary>
   </component>
@@ -650,7 +669,9 @@
       <workItem from="1629709916029" duration="694000" />
       <workItem from="1629710656102" duration="370000" />
       <workItem from="1629717556917" duration="8898000" />
-      <workItem from="1629769404631" duration="3641000" />
+      <workItem from="1629769404631" duration="4124000" />
+      <workItem from="1629773659903" duration="4586000" />
+      <workItem from="1629782592742" duration="1389000" />
     </task>
     <task id="LOCAL-00001" summary="修改">
       <created>1584808794797</created>
@@ -834,7 +855,21 @@
       <option name="project" value="LOCAL" />
       <updated>1629717620959</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="数据代码">
+      <created>1629773208846</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1629773208846</updated>
+    </task>
+    <task id="LOCAL-00028" summary="数据代码">
+      <created>1629773394244</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1629773394244</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1087,7 +1122,7 @@
     <SUITE FILE_PATH="coverage/$start__4_.coverage" NAME="start (4) Coverage Results" MODIFIED="1618735498640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/ceshi" />
     <SUITE FILE_PATH="coverage/$souhu_web.coverage" NAME="souhu_web Coverage Results" MODIFIED="1629105821702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders" />
     <SUITE FILE_PATH="coverage/$mayidata.coverage" NAME="mayidata Coverage Results" MODIFIED="1622556682063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/软件代码" />
-    <SUITE FILE_PATH="coverage/$souhu_start_id.coverage" NAME="souhu_start_id Coverage Results" MODIFIED="1629772502223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/ceshi" />
+    <SUITE FILE_PATH="coverage/$souhu_start_id.coverage" NAME="souhu_start_id Coverage Results" MODIFIED="1629773986587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/ceshi" />
     <SUITE FILE_PATH="coverage/$tiantian_api.coverage" NAME="tiantian_api Coverage Results" MODIFIED="1621839993241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫js代码/爬虫" />
     <SUITE FILE_PATH="coverage/$miangongmu.coverage" NAME="miangongmu Coverage Results" MODIFIED="1629766765263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/标签" />
     <SUITE FILE_PATH="coverage/$run.coverage" NAME="run Coverage Results" MODIFIED="1624347272493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/微信/wechat-spider-master/wechat-spider" />
@@ -1096,6 +1131,7 @@
     <SUITE FILE_PATH="coverage/$import_keyword.coverage" NAME="import_keyword Coverage Results" MODIFIED="1591429988755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/sougou/sougou" />
     <SUITE FILE_PATH="coverage/$ceshi.coverage" NAME="ceshi Coverage Results" MODIFIED="1628824461784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/js" />
     <SUITE FILE_PATH="coverage/$settings.coverage" NAME="settings Coverage Results" MODIFIED="1585067480838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/sougou/sougou" />
+    <SUITE FILE_PATH="coverage/$start7.coverage" NAME="start7 Coverage Results" MODIFIED="1629783991460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/ceshi" />
     <SUITE FILE_PATH="coverage/$all_data_code.coverage" NAME="all_data_code Coverage Results" MODIFIED="1623027942140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/软件代码" />
     <SUITE FILE_PATH="coverage/$data_2_insert.coverage" NAME="data_2_insert Coverage Results" MODIFIED="1619237301289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/ttconfig/spider_redis/spider_redis/spiders" />
     <SUITE FILE_PATH="coverage/$pytest_in_mian_py.coverage" NAME="pytest in mian.py Coverage Results" MODIFIED="1622556522406" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/标签" />
@@ -1130,7 +1166,7 @@
     <SUITE FILE_PATH="coverage/$zjx_data.coverage" NAME="zjx_data Coverage Results" MODIFIED="1617351101650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/中基协" />
     <SUITE FILE_PATH="coverage/$data_insert.coverage" NAME="data_insert Coverage Results" MODIFIED="1619274932032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/ttconfig/spider_redis/spider_redis/spiders" />
     <SUITE FILE_PATH="coverage/$AES.coverage" NAME="AES加密测试 Coverage Results" MODIFIED="1624515851035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫js代码/AES加密" />
-    <SUITE FILE_PATH="coverage/$start_web_tt.coverage" NAME="start_web_tt Coverage Results" MODIFIED="1629772958941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/ceshi" />
+    <SUITE FILE_PATH="coverage/$start_web_tt.coverage" NAME="start_web_tt Coverage Results" MODIFIED="1629781967508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/ceshi" />
     <SUITE FILE_PATH="coverage/$js_weixin.coverage" NAME="js_weixin Coverage Results" MODIFIED="1623854806405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫js代码/爬虫/微信公众号" />
     <SUITE FILE_PATH="coverage/$crawl_paper.coverage" NAME="crawl_paper Coverage Results" MODIFIED="1624413786831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫框架/guba" />
     <SUITE FILE_PATH="coverage/$Daily_Wexin_Content_Copy.coverage" NAME="Daily_Wexin_Content_Copy Coverage Results" MODIFIED="1628469093281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/微信" />
