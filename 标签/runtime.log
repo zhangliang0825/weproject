@@ -4959,3 +4959,4 @@
 2021-08-20 13:36:30.783 | DEBUG    | __main__:<module>:978 - update hisinfo_cx set category='[X].',auto_category='[X].',scores = 0. where id = 25106432
 2021-08-23 08:42:53.474 | DEBUG    | __main__:<module>:978 - update hisinfo_cx set category='[T][K][T1].',auto_category='[T][K][T1].',scores = -1. where id = 25477159
 2021-08-23 08:47:22.404 | DEBUG    | __main__:<module>:980 - update hisinfo_cx set category='[K][T].',auto_category='[K][T].',scores = -1. where id = 25477159
+2021-08-24 08:59:28.537 | DEBUG    | __main__:<module>:965 - update hisinfo_cx set category='[H][@].',auto_category='[H][@].',scores = 2. where id = 25511137

@@ -48,7 +48,7 @@ def get_content(cur,tongyici,jijin_input):
     sql = f'''SELECT a.id, a.str_date, a.category, a.auto_scores, b.content,b.link, a.media_channel, b.title,a.key1,b.summary,a.media,a.post_type,a.reporter 
     FROM hisinfo_cx a INNER JOIN cx0308 b ON a.post_id = b.id
      WHERE   a.post_type <> 1 AND a.post_type<>15 AND a.post_type <> 5 and a.post_type <> 7 and a.post_type <> 20 and a.post_type <> 10 and a.del_flag = 0 
-     AND a.key1 = '{jijin_input}' AND  a.str_date>=20210801 and a.id =	25477159 ORDER BY a.id DESC'''
+     AND a.key1 = '{jijin_input}' AND  a.str_date>=20210801 and a.id =	25511137 ORDER BY a.id DESC'''
     #a.category in ( '','[@]')
     cur.execute(sql)
     content_list = []

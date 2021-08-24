@@ -955,9 +955,8 @@ for jj_name in jijin_list:#获取同义词
                 check_neg_pos_score = 0
             if '灵犀君' in reporter:
                 check_neg_pos_score =0
-            if  '[T1]' in tags_reslut or '[X]' in tags_reslut:
-                tags_reslut = re.sub(r'\[T1\]', '', tags_reslut)
-
+            if '[T1]' in tags_reslut:
+                tags_reslut = '[T]'
 
                 scores = 0
 
@@ -965,8 +964,8 @@ for jj_name in jijin_list:#获取同义词
                 tags_reslut + '.', str(check_neg_pos_score) + '.', id_)
             logger.debug(sql)
             print(sql)
-            cur.execute(sql)
-            db.commit()
+            # cur.execute(sql)
+            # db.commit()
         except Exception as e:
             print(e)
 

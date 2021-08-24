@@ -17,19 +17,25 @@ class WebttSpider(scrapy.Spider):
     allowed_domains = ['m.toutiao.com']
 
     custom_settings = {
-        'DEFAULT_REQUEST_HEADERS': {
-  'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+        'DEFAULT_REQUEST_HEADERS': {'Accept':'application/json',
 
-  # 'cookie': ' PIXIEL_RATIO=1.5; sid_guard=6d59bafe68b1d4985bbafd8acc5f815a%7C1594191164%7C5184000%7CSun%2C+06-Sep-2020+06%3A52%3A44+GMT; UM_distinctid=1735a6621107d5-00bb1f0a596c86-b7a1334-e1000-1735a662112a2c; CNZZDATA1274463548=409357553-1594944740-%7C1594944740; __utmz=24953151.1599121320.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); FRM=new; __utma=24953151.1663346515.1599121320.1600935555.1601188260.7; tt_webid=6877724130952234504; MONITOR_WEB_ID=6877724130952234504; WIN_WH=1280_578; tt_webid=6835446038360000013',
-  'sec-fetch-dest': 'document',
-  'sec-fetch-mode': 'navigate',
-  'sec-fetch-site': 'none',
-  'sec-fetch-user': '?1',
-  'upgrade-insecure-requests': ' 1',
-  'user-agent': ' Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36'
+'Connection':'keep-alive',
+'Content-Type':'application/x-www-form-urlencoded',
+'Cookie':'tt_webid=6999810541595182599; WIN_WH=1280_577; PIXIEL_RATIO=1.5; FRM=new; s_v_web_id=verify_6b5559a9c1af5a7c2813150f100c90e4; MONITOR_WEB_ID=6999810541595182599; _signature=_02B4Z6wo00f01LqQFkwAAICAOpLsDeTlACS6sBLAAE-Fa8; ttcid=9becd88c89c542c39e76842f2f0abe9276; tt_scid=a.7T0OfXUOWzXU6ybFxu-43KdUiQCJPmYmhTPRIuqV4xemDZEpPl2MU7VFlURuVzc9ce',
+'Host':'m.toutiao.com',
+'Referer':'https://m.toutiao.com/search?keyword=%E5%98%89%E5%AE%9E%E5%9F%BA%E9%87%91&pd=information&original_source=&in_ogs=',
+'sec-ch-ua':'"Chromium";v="92", " Not A;Brand";v="99", "Google Chrome";v="92"',
+'sec-ch-ua-mobile':'?0',
+'Sec-Fetch-Dest':'empty',
+'Sec-Fetch-Mode':'cors',
+'Sec-Fetch-Site':'same-origin',
+'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36',
+            
+
 },
         'DOWNLOADER_MIDDLEWARES': {
-            'toutiao.middlewares.UserAgentDownloadMiddleware': None,
+            # 'toutiao.middlewares.UserAgentDownloadMiddleware': None,
+            'ceshi.middlewares.GetFailedrequsts': 544
             # 'toutiao.middlewares.RandomProxy': 600,
         },
         'ITEM_PIPELINES': {
@@ -105,7 +111,7 @@ class WebttSpider(scrapy.Spider):
             else:
                 meida_name = ''.join(info.xpath(".//div[contains(@class,'flex-shrink-1')]/div[contains(@class,'word-line-1')]//text()").getall())
                 media_code = ''
-                toutiao_url = f'https://www.toutiao.com/i{Single_id}/'
+                toutiao_url = f'https://toutiao.com/i{Single_id}/'
             ex = self.redis.sadd('crawledtt_url', toutiao_url)
             if ex == 1:
                 if 'iNone' not in toutiao_url:
