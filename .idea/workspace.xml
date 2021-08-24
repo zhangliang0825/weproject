@@ -20,26 +20,10 @@
       <change afterPath="$PROJECT_DIR$/文件上传/20210824ribaozhongyou.pdf" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/文件上传/20210824ribaozxbc.pdf" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/文件上传/上传数据报告.2021-08-23_10-21-12_608992.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/爬虫框架/ceshi/log/souhu_id.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/爬虫框架/ceshi/log/tt_id_6.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/爬虫框架/ceshi/start7.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/文件上传/ghostdriver.log" beforeDir="false" afterPath="$PROJECT_DIR$/文件上传/ghostdriver.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/文件上传/上传数据报告.log" beforeDir="false" afterPath="$PROJECT_DIR$/文件上传/上传数据报告.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/sougou.py" beforeDir="false" afterPath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/sougou.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/souhu.py" beforeDir="false" afterPath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/souhu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/souhu_id.py" beforeDir="false" afterPath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/souhu_id.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/souhu_web.py" beforeDir="false" afterPath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/souhu_web.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/tt_id.py" beforeDir="false" afterPath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/tt_id.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/tt_id_.py" beforeDir="false" afterPath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/tt_id_.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/tt_id_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/tt_id_2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/tt_id_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/tt_id_3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/tt_id_4.py" beforeDir="false" afterPath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/tt_id_4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/tt_id_5.py" beforeDir="false" afterPath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/tt_id_5.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/web_tt.py" beforeDir="false" afterPath="$PROJECT_DIR$/爬虫框架/ceshi/ceshi/spiders/web_tt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/爬虫框架/ceshi/log/web_tt.log" beforeDir="false" afterPath="$PROJECT_DIR$/爬虫框架/ceshi/log/web_tt.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/爬虫框架/ceshi/log/web_tt.log.2021-08-02_10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/爬虫框架/ceshi/log/tt_id_6.log" beforeDir="false" afterPath="$PROJECT_DIR$/爬虫框架/ceshi/log/tt_id_6.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -671,7 +655,8 @@
       <workItem from="1629717556917" duration="8898000" />
       <workItem from="1629769404631" duration="4124000" />
       <workItem from="1629773659903" duration="4586000" />
-      <workItem from="1629782592742" duration="1389000" />
+      <workItem from="1629782592742" duration="1600000" />
+      <workItem from="1629784229012" duration="417000" />
     </task>
     <task id="LOCAL-00001" summary="修改">
       <created>1584808794797</created>
@@ -869,7 +854,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629773394244</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="数据代码上传">
+      <created>1629784059045</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1629784059045</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1069,7 +1061,8 @@
     <MESSAGE value="爬虫第二次上传" />
     <MESSAGE value="0:18" />
     <MESSAGE value="数据代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="数据代码" />
+    <MESSAGE value="数据代码上传" />
+    <option name="LAST_COMMIT_MESSAGE" value="数据代码上传" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
