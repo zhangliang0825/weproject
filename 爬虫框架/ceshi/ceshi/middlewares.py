@@ -25,12 +25,18 @@ class GetFailedrequsts(RetryMiddleware):
     def process_response(self, request, response, spider):
 
         responses = response.body.decode("utf8")
-        response_json = demjson.decode(responses).get("data")
+        if spider.name == "souhu":
+            response_json = demjson.decode(responses).get("data")
 
-        if response_json == None:
-            print('进行重试的新请求数据..')
-            print(response_json)
-            return self._retry(request, 'spider error', spider) or response
+            if response_json == None:
+                print('进行重试的新请求数据..')
+                print(response_json)
+                return self._retry(request, 'spider error', spider) or response
+        elif spider.name == "web_tt":
+            result_type = demjson.decode(responses).get("result_type")
+            if result_type == 0:
+                print('头条数据重新请求')
+                return self._retry(request, 'spider error', spider) or response
 
         return response
 

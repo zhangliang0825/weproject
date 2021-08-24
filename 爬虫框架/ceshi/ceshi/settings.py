@@ -32,7 +32,7 @@ ROBOTSTXT_OBEY = False
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 CONCURRENT_REQUESTS =8
 RETRY_ENABLED = True
-RETRY_TIMES = 5
+RETRY_TIMES = 8
 
 
 # RETRY_HTTP_CODES = [404]  #重试
@@ -82,7 +82,7 @@ REDIRECT_ENABLED = False
 #    'scrapy.extensions.telnet.TelnetConsole': None,
 #}
 
-toutiaowebcookies = '__utmz=24953151.1615880696.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); FRM=new; PIXIEL_RATIO=1.5; ttcid=24f71fdb220943df99b38ee877c00c7511; sid_guard=da3c6a729bf88a41bd6a7855e710c63e%7C1618548299%7C5184000%7CTue%2C+15-Jun-2021+04%3A44%3A59+GMT; tt_webid=6940875644386870798; _S_DPR=1.5; _S_IPAD=0; __utma=24953151.1786946199.1615880696.1617849239.1622093895.3; passport_csrf_token=e5a4cfa766461577354248ee2a338f5f; tt_scid=Db8.D9EQ6VTzKYIgPt2q4pciHH25bHdnr.WcNyLqiPD9Jxu-Bp06d940FeyqHnik2556; _S_WIN_WH=1280_577; ttwid=1%7CKsJtLsS-oK5WbTn-fv37N6TkXnFSTSPYxsiGdINBDio%7C1628585117%7C9d7d872a23716822ea29a1435c90e543abc2a71b611907317276e106b8ccbe5d; s_v_web_id=verify_ad62d94304bc99d87cf2ec837469e838; WIN_WH=418_577; MONITOR_WEB_ID=6940875644386870798'
+toutiaowebcookies = 'tt_webid=6999810541595182599; WIN_WH=1280_577; PIXIEL_RATIO=1.5; FRM=new; s_v_web_id=verify_6b5559a9c1af5a7c2813150f100c90e4; MONITOR_WEB_ID=6999810541595182599; _signature=_02B4Z6wo00f01LqQFkwAAICAOpLsDeTlACS6sBLAAE-Fa8; ttcid=9becd88c89c542c39e76842f2f0abe9276; tt_scid=a.7T0OfXUOWzXU6ybFxu-43KdUiQCJPmYmhTPRIuqV4xemDZEpPl2MU7VFlURuVzc9ce'
 COOKIES_TT_WEB = BosstransCookie(toutiaowebcookies).stringToDict()
 
 COOKIES_TT = 'csrftoken=f0b1ad679f229da355e6c9ac522bb981; ttcid=d3084767ea704fefa6ddac7936408d3333; s_v_web_id=verify_knqxlh0u_s3pQDeyd_5O6x_4feR_BWDr_tTRaqJrlsRIr; csrftoken=f0b1ad679f229da355e6c9ac522bb981; __ac_nonce=0608036b7006a98ba2dbc; __ac_signature=_02B4Z6wo00f01fYZ6MgAAIDCupW97Sk.Y9H2PexAAB0I5d; MONITOR_WEB_ID=3966c7e3-725e-4eb6-b131-274771bed1b6; ttwid=1%7CEQqaQRGYqJHbM6vjddSmseATuLjWIh4Z9_nFPJ-svOk%7C1619015616%7Ccb787cc3f66e8bbc01c2200c1543c398bc0faec533632bc382d105ef10b81266; csrftoken=f0b1ad679f229da355e6c9ac522bb981; tt_webid=6951613006950188581'
